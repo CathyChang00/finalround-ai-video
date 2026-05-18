@@ -1,0 +1,4 @@
+interface:
+  display_name: "FinalRound AI Video"
+  short_description: "FinalRound growth video prompt system"
+  default_prompt: "Use $finalround-ai-video to turn this trend into a 15-second FinalRound ad prompt."
