@@ -1,119 +1,119 @@
 ---
 name: ai-fruit-short-drama
-description: AI fruit short drama research library for AI video work. Use when the user wants Fruit Love Island style, anthropomorphic fruit drama, AI fruit skits, absurd object romance, synthetic reality-show drama, fruit characters arguing/dating/betraying each other, or viral AI slop short-drama energy. This is a pure style-analysis library, not a FinalRound-specific template.
+description: "AI 水果短剧风格研究库，用于 AI 视频风格分析。当用户想要 Fruit Love Island、水果拟人短剧、AI 水果 skit、荒诞物体恋爱、合成真人秀 drama、水果角色吵架/约会/背叛、AI slop 式短剧能量时使用。这是纯风格分析库，不是 FinalRound 专用模板。"
 ---
 
-# AI Fruit Short Drama Style Library
+# AI 水果短剧风格库
 
-Use this library to understand what the user means when she says "AI水果短剧风格." Extract transferable style grammar, then apply it to the user's actual subject.
+使用这个库时，目标是理解用户说“AI 水果短剧风格”到底想要提取什么风格要素，然后把这些要素迁移到用户给定的视频主题里。
 
-The reference genre is not normal animation. It is synthetic, mobile-first, reality-show/soap-opera microdrama performed by anthropomorphic fruit or objects.
+这个参考类型不是普通动画，而是由水果或物体拟人出演的、移动端优先的、合成感很强的真人秀/肥皂剧式微短剧。
 
-## Core Definition
+## 核心定义
 
-AI fruit short drama turns simple human relationship drama into a surreal object cast.
+AI 水果短剧会把简单的人类关系 drama，放进一个荒诞的水果/物体演员阵容里。
 
-The basic engine:
-
-```
-recognizable fruit/object character
-→ human dating/social conflict
-→ exaggerated facial performance
-→ abrupt betrayal/reveal/reaction
-→ cliffhanger or audience-bait ending
-```
-
-The appeal is not polish. The appeal is absurd specificity: a strawberry can have trust issues, a banana can be toxic, a pineapple can be a villain, and the video treats it seriously.
-
-## Research Basis
-
-This library is based on the 2026 AI-generated Fruit Love Island / AI fruit TikTok trend and adjacent fruit-themed AI microdramas.
-
-Key takeaways:
-
-- The format is a TikTok-native micro-series: short, episodic, mobile-first, and built for rapid audience reaction.
-- The core joke is reality-TV melodrama performed by anthropomorphic fruit: love triangles, recouplings, betrayal, gossip, eliminations, and confessionals.
-- The AI flaws are part of the texture. Weird anatomy, synthetic voices, uncanny expressions, and "AI slop" roughness can make it more bizarre and shareable.
-- Fruit works because it is simple and instantly readable: shape, color, texture, and ripeness become personality shorthand.
-
-## What To Extract
-
-When adapting an existing Instagram video, extract these levers:
-
-1. **Object-as-Person Casting**: replace people with fruits/objects whose shape, texture, or color exaggerates their personality.
-2. **Reality-Show Stakes**: romance, jealousy, betrayal, alliance, elimination, apology, confession, or public embarrassment.
-3. **Overt Emotion**: big eyes, clear mouth movement, crying, sweating, blushing, wobbling, rolling away, or freezing.
-4. **Simple Relationship Map**: no more than 2-4 characters in a 15s idea; everyone needs an obvious role.
-5. **Synthetic Weirdness**: the slightly uncanny AI look is part of the flavor; do not over-polish it into normal Pixar-style animation.
-6. **Fast Plot Turn**: within seconds, reveal who lied, who cheated, who got chosen, who got eliminated, or who is secretly jealous.
-7. **Cliffhanger Energy**: end with a charged reaction, confession, door opening, vote result, or "part 2" feeling.
-8. **Comment-Bait Premise**: viewers should immediately understand the absurd question, e.g. "Why is the banana the toxic one?"
-
-## Character Grammar
-
-Fruit should encode personality:
-
-- banana: slippery, chaotic, unserious, toxic charm, physical comedy
-- strawberry: cute, emotional, easily hurt, fan-favorite energy
-- lemon: sour, blunt, judgmental, harsh truth
-- pineapple: spiky, defensive, villain or diva energy
-- grape cluster: group pressure, gossip, chorus, clique
-- apple: polished, reliable, secretly insecure
-- watermelon: big presence, loud entrance, crowd-pleaser
-- orange: segmented, cheerful outside, split loyalties
-- avocado: soft interior/hard exterior, guarded vulnerability
-
-## Camera And Editing Grammar
-
-Use:
-
-- vertical 9:16 mobile framing
-- bright, high-color, synthetic AI look
-- fruit face close-ups with eyes and mouth
-- abrupt hard cuts and reaction shots
-- villa, kitchen counter, island, poolside, table, dating-show lounge, or surreal stage
-- big emotional sound moments: gasp, record scratch, dramatic sting, silence
-- short dialogue that states the conflict directly
-
-Avoid:
-
-- children's cartoon softness
-- complicated fantasy worldbuilding
-- too many characters in one short clip
-- normal human realism
-- gore, rotting, or body horror
-- abstract symbolism that viewers cannot read in 2 seconds
-
-## Dialogue Rules
-
-The dialogue should be simple, dramatic, and a little stupid in a good way.
-
-Good line shapes:
-
-- "You picked the pineapple?"
-- "I trusted you, Banana."
-- "Don't call me sweet if you voted me out."
-- "The grapes told me everything."
-- "I was ripe for you."
-- "This villa is full of lies."
-
-The line should reveal a relationship, not explain the style.
-
-## Adaptation Workflow
-
-1. Identify the original video's human conflict.
-2. Cast each role as a fruit/object with a personality reason.
-3. Pick one social arena: villa, table, kitchen counter, poolside, audition stage, voting room.
-4. Choose one fast plot turn: betrayal, choice, rejection, exposure, elimination, confession.
-5. End on a charged reaction or cliffhanger.
-
-Short output format:
+基础结构是：
 
 ```
-风格倾斜：AI Fruit Short Drama
+一眼能认出的水果/物体角色
+→ 人类恋爱/社交冲突
+→ 夸张脸部表演
+→ 突然背叛/揭露/反应
+→ cliffhanger 或诱导评论式结尾
+```
+
+它的吸引力不是精致，而是荒诞得很具体：草莓可以有信任危机，香蕉可以很 toxic，菠萝可以像反派，视频还会把这件事当真。
+
+## 调研基准
+
+这个库基于 2026 年 AI 生成的 Fruit Love Island / AI 水果 TikTok 趋势，以及相邻的水果主题 AI 微短剧。
+
+关键结论：
+
+- 这是 TikTok 原生的微剧集形式：短、连续、移动端优先，靠快速观众反应传播。
+- 核心笑点是真人秀 melodrama 由拟人水果来表演：三角恋、重新配对、背叛、八卦、淘汰、自白。
+- AI 瑕疵是质感的一部分：奇怪身体结构、合成声音、诡异表情、粗糙的“AI slop”感，反而会让它更荒诞、更容易被转发。
+- 水果有效是因为它足够简单、足够好读：形状、颜色、质地、成熟度都能变成人格暗示。
+
+## 需要提取的要素
+
+当你把一个现有 Instagram 视频往这个风格倾斜时，重点提取这些杠杆：
+
+1. **物体当人选角**：用水果/物体替代人，并让它的形状、质地或颜色放大角色性格。
+2. **真人秀 stakes**：恋爱、嫉妒、背叛、结盟、淘汰、道歉、自白、公开尴尬。
+3. **外显情绪**：大眼睛、清楚嘴型、哭、出汗、脸红、摇晃、滚走、僵住。
+4. **简单关系图**：15 秒想法里最好只有 2-4 个角色，每个角色的功能必须一眼能懂。
+5. **合成怪感**：轻微 uncanny 的 AI 味道是风格，不要把它过度打磨成普通皮克斯式动画。
+6. **快速剧情转折**：几秒内就要揭示谁撒谎、谁背叛、谁被选择、谁被淘汰、谁在吃醋。
+7. **Cliffhanger 能量**：结尾停在强反应、自白、开门、投票结果或“还有下一集”的感觉上。
+8. **评论诱饵前提**：观众应该马上懂这个荒诞问题，例如“为什么 toxic 的是香蕉？”
+
+## 角色语法
+
+水果要编码角色性格：
+
+- 香蕉：滑、不稳定、不正经、toxic 魅力、肢体喜剧。
+- 草莓：可爱、情绪化、容易受伤、观众缘强。
+- 柠檬：酸、刻薄、直接、说难听真话。
+- 菠萝：带刺、防御性强、反派或 diva 能量。
+- 葡萄串：群体压力、八卦、合唱团、小团体。
+- 苹果：外表可靠精致，内心可能不安。
+- 西瓜：存在感强、出场大、气势足。
+- 橙子：分瓣、外表明亮，适合表现分裂立场。
+- 牛油果：外硬内软、防御性强但脆弱。
+
+## 镜头和剪辑语法
+
+可以使用：
+
+- 竖屏 9:16 移动端构图。
+- 明亮、高色彩、合成感强的 AI 画面。
+- 水果脸部特写，眼睛和嘴巴要清楚。
+- 突然硬切和反应镜头。
+- villa、厨房台面、岛台、泳池边、桌面、恋综休息区或荒诞舞台。
+- 强情绪音效：倒吸气、record scratch、dramatic sting、突然沉默。
+- 直接说出冲突的短台词。
+
+避免：
+
+- 儿童动画式柔软可爱。
+- 复杂幻想世界观。
+- 一个短片里塞太多角色。
+- 普通人类写实感。
+- 血腥、腐烂、body horror。
+- 2 秒内看不懂的抽象隐喻。
+
+## 台词规则
+
+台词要简单、戏剧化，而且要有一点“蠢得刚好”的味道。
+
+可参考的中文句型：
+
+- “你选了菠萝？”
+- “香蕉，我那么相信你。”
+- “你都投我出局了，就别再叫我甜心。”
+- “葡萄们都告诉我了。”
+- “我为你成熟了。”
+- “这个 villa 里全是谎言。”
+
+台词应该揭示关系，而不是解释风格。
+
+## 改写流程
+
+1. 识别原视频里的人类冲突。
+2. 给每个角色选一个水果或物体，并说明性格理由。
+3. 选一个社交场域：villa、桌面、厨房台面、泳池边、试镜舞台、投票房。
+4. 选择一个快速剧情转折：背叛、选择、拒绝、曝光、淘汰、自白。
+5. 用强反应或 cliffhanger 收尾。
+
+短输出格式：
+
+```
+风格倾斜：AI 水果短剧
 原视频核心冲突：[一句话]
 水果/物体选角：[角色A=水果/物体 + 原因；角色B=水果/物体 + 原因]
-短剧场域：[villa / kitchen counter / poolside / table / stage 等]
+短剧场域：[villa / 厨房台面 / 泳池边 / 桌面 / 舞台 等]
 剧情转折：[第几秒发生什么反转]
 情绪动作：[水果如何用身体表现情绪]
 可迁移元素：[3-5个具体风格要素]
@@ -122,10 +122,10 @@ Short output format:
 
 ## QA
 
-Before using this style:
+使用这个风格前检查：
 
-- Is there a simple human social conflict under the fruit shell?
-- Does each fruit/object have a reason for its casting?
-- Is the plot readable within 2 seconds?
-- Does the video preserve synthetic AI short-drama weirdness instead of becoming generic animation?
-- Does it end with a reaction, reveal, or cliffhanger?
+- 水果壳下面是否有一个简单的人类社交冲突？
+- 每个水果或物体的选角是否有性格理由？
+- 剧情是否能在 2 秒内读懂？
+- 是否保留了 AI 短剧的合成怪感，而不是变成普通动画？
+- 结尾是否停在反应、揭露或 cliffhanger 上？

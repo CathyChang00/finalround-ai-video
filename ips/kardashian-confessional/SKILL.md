@@ -1,117 +1,117 @@
 ---
 name: kardashian-confessional
-description: Kardashian-style reality confessional research library for AI video work. Use when the user says a video should lean Kardashian, reality-show confession, glam family drama, polished self-narration, luxury domestic drama, direct-to-camera confession, or confession-cutaway-receipt structure. This is a pure style-analysis library, not a FinalRound-specific template and not a celebrity impersonation tool.
+description: "卡戴珊式真人秀 confessional 风格研究库，用于 AI 视频风格分析。当用户说视频想往卡戴珊、真人秀自白、精致家庭 drama、精致自我叙事、奢华日常矛盾、对镜头 confession、confession + cutaway + 证据结构倾斜时使用。这是纯风格分析库，不是 FinalRound 专用模板，也不是名人仿冒工具。"
 ---
 
-# Kardashian Confessional Style Library
+# 卡戴珊式真人秀 Confessional 风格库
 
-Use this library to understand what the user means when she says "往卡戴珊风格倾斜." Extract transferable style grammar, then apply it to the user's actual subject.
+使用这个库时，目标是理解用户说“往卡戴珊风格倾斜”到底想要提取什么风格要素，然后把这些要素迁移到用户给定的视频主题里。
 
-Do not depict, name, impersonate, or recreate actual Kardashian/Jenner family members. Do not use their show titles, likenesses, voices, catchphrases, logos, or protected brand assets. The reusable value is the reality-TV grammar.
+不要描绘、命名、仿冒或复刻真实 Kardashian/Jenner 家族成员。不要使用她们的节目名、肖像、声音、口头禅、logo 或受保护品牌资产。这个库可复用的是“真人秀叙事语法”，不是具体真人。
 
-## Core Definition
+## 核心定义
 
-Kardashian-style reality confession is not just luxury or makeup. It is a polished self-narration machine.
+卡戴珊式真人秀 confessional 不是“奢华”和“妆发”的简单堆砌，而是一套精致的自我叙事机器。
 
-The basic engine:
-
-```
-composed self-presentation
-→ direct-to-camera confession
-→ hard cut to messy evidence
-→ reaction from another person / group
-→ character reclaims control of the story
-```
-
-The drama is usually personal and specific, but shot like it matters. The character is both participant and narrator: she performs the event, then explains the event, then reframes the event.
-
-## Research Basis
-
-This library is based on reality-TV confessional analysis and Kardashian media coverage, not on surface luxury cues.
-
-Key takeaways:
-
-- Reality-TV confessionals are a defining genre device: cast members speak directly to camera, giving viewers "thought bubbles" and a point of view on footage.
-- Confessionals combine authenticity and artifice: they feel candid, but they also give the show a way to shape interpretation.
-- Kardashian-style confessionals are especially about narrative control, persona construction, family/business/status context, and polished relatability.
-- The Hulu-era visual environment is glossier and more brand-aware: confessional outfits, showrooms, closets, domestic luxury spaces, and product/business context are part of the frame.
-
-## What To Extract
-
-When adapting an existing Instagram video, extract these levers:
-
-1. **Confessional Control**: a character looks directly into camera and narrates her own version of what happened.
-2. **Polished Contradiction**: the person looks composed, styled, and camera-ready while describing something chaotic, petty, stressful, or emotionally messy.
-3. **Proof Cut**: cut away from the confession to a short scene that proves or contradicts what she just said.
-4. **Micro-Drama Framed Big**: a small social, work, dating, family, money, or status conflict is framed with high seriousness.
-5. **Status Environment**: soft luxury, clean domestic spaces, glam rooms, closets, cars, kitchens, offices, couches, phone calls, and mirrors act as status context.
-6. **Reaction Economy**: eye rolls, silent pauses, fake smiles, side glances, and tiny facial reactions carry more meaning than long jokes.
-7. **Narrative Self-Defense**: the character is not only experiencing drama; she is trying to control how the audience interprets her.
-8. **Group Orbit**: friends, sisters, assistants, partners, stylists, or group chats become a social jury around the main character.
-
-## Camera And Editing Grammar
-
-Use:
-
-- fixed direct-to-camera confessional close-up
-- soft bright lighting, polished skin, clean background
-- composed posture, controlled emotion, micro-expression
-- hard cuts between confession and evidence
-- short reaction shots from other characters
-- phone call, mirror, kitchen island, car interior, closet, glam room, or couch setup
-- pacing that alternates "she says the official version" and "the footage tells on her"
-
-Avoid:
-
-- shaky vlog chaos as the main camera language
-- dark cinematic lighting
-- slapstick as the main joke
-- over-explaining the drama
-- generic luxury montage with no confession or contradiction
-- copying real people, real show names, or real brand assets
-
-## Voice And Dialogue
-
-The voice is controlled, declarative, and slightly self-aware. It often sounds like a person building a case for herself.
-
-Good line shapes:
-
-- "I was being calm. Everyone else was choosing drama."
-- "I did not say it was a crisis. I said it was extremely inconvenient."
-- "At that point, I realized the room had misunderstood my energy."
-- "I was trying to be supportive. Apparently, my face disagreed."
-- "I love when people ask for honesty and then hate the answer."
-
-Do not write long monologues. The line should create a self-image, then the cutaway should test it.
-
-## Adaptation Workflow
-
-1. Identify the original video's conflict.
-2. Decide who gets the confessional camera.
-3. Write the character's polished self-version in one sentence.
-4. Choose the proof cut that contradicts or complicates that sentence.
-5. Add one reaction shot from the social orbit.
-6. End with a small reframe, deadpan line, or controlled emotional reset.
-
-Short output format:
+基础结构是：
 
 ```
-风格倾斜：Kardashian Confessional
+精致自我呈现
+→ 对镜头自白
+→ 硬切到真实证据或混乱现场
+→ 另一个人或一群人的反应
+→ 主角重新夺回叙事控制权
+```
+
+它的 drama 通常很私人、很具体，但拍法像这件事很重要。角色既是事件参与者，也是事件讲述者：她先经历这件事，再解释这件事，最后重新定义这件事。
+
+## 调研基准
+
+这个库基于真人秀 confessional 机制和 Kardashian 相关媒体分析，不是基于表层奢华元素。
+
+关键结论：
+
+- 真人秀 confessional 是一种核心类型装置：角色直接对镜头说话，把自己的“内心弹幕”和立场交给观众。
+- Confessional 同时有真实感和表演性：它看起来像私密坦白，但也承担着引导观众理解剧情的功能。
+- 卡戴珊式 confessional 尤其重视叙事控制、人设建构、家庭/商业/身份语境，以及“精致但可共情”的状态。
+- Hulu 时代的视觉环境更光滑、更品牌化：采访服装、showroom、衣帽间、居家奢华空间、商业场景都会进入画面，成为人物身份的一部分。
+
+## 需要提取的要素
+
+当你把一个现有 Instagram 视频往这个风格倾斜时，重点提取这些杠杆：
+
+1. **对镜头控场**：角色直接看镜头，讲述“她认为发生了什么”。
+2. **精致反差**：人物外表、姿态、环境都很体面，但她讲的事情很混乱、琐碎、尴尬、紧张或情绪化。
+3. **证据切片**：从自白硬切到一个短镜头，用来证明、打脸或复杂化她刚才说的话。
+4. **小事大拍**：一个社交、工作、恋爱、家庭、金钱或身份小矛盾，被拍得像重大事件。
+5. **身份场景**：柔和奢华空间、干净居家环境、化妆间、衣帽间、车内、厨房岛台、办公室、沙发采访位、电话和镜子，都是身份语境。
+6. **反应经济**：白眼、沉默、假笑、侧目、停顿、细小表情，比长段解释更有戏。
+7. **叙事自保**：角色不只是经历 drama，她还在努力控制观众如何理解她。
+8. **社交审判席**：朋友、姐妹、助理、伴侣、造型师或群聊，会形成围绕主角的“社交陪审团”。
+
+## 镜头和剪辑语法
+
+可以使用：
+
+- 固定机位、直视镜头的 confessional 近景。
+- 柔和明亮的光线、干净皮肤质感、整洁背景。
+- 克制坐姿、情绪控制、细微表情变化。
+- 自白和证据之间的硬切。
+- 其他角色的短反应镜头。
+- 电话、镜子、厨房岛台、车内、衣帽间、化妆间、沙发采访位。
+- “她说官方版本”和“画面揭穿她”之间的交替节奏。
+
+避免：
+
+- 把手持 vlog 乱晃当成主视觉。
+- 暗黑电影感。
+- 主要靠肢体闹剧制造笑点。
+- 把 drama 解释得太满。
+- 只有奢华 montage，但没有自白、反差或证据切片。
+- 复制真实人物、真实节目名或真实品牌资产。
+
+## 语气和台词
+
+语气是克制、断言式、有一点自我意识的。它听起来像一个人在为自己建立案情。
+
+可参考的中文句型：
+
+- “我当时非常冷静，是其他人在选择 drama。”
+- “我没有说这是危机，我只是说它极其不方便。”
+- “就在那一刻，我意识到这个房间误解了我的能量。”
+- “我本来是在支持她，只是我的脸不同意。”
+- “我很喜欢别人要求你诚实，然后又讨厌你真的诚实。”
+
+不要写长独白。一句话应该先建立主角的自我形象，然后让证据镜头去检验它。
+
+## 改写流程
+
+1. 识别原视频里的核心冲突。
+2. 决定谁拥有 confessional 镜头。
+3. 用一句话写出角色想让观众相信的“精致版本”。
+4. 选择一个证据镜头，用来打脸、证明或复杂化这句话。
+5. 加一个来自“社交审判席”的反应镜头。
+6. 用一句重新定义局面的台词、死pan反应或克制情绪 reset 收尾。
+
+短输出格式：
+
+```
+风格倾斜：卡戴珊式真人秀 Confessional
 原视频核心冲突：[一句话]
-Confessional主角：[谁对镜头讲自己的版本]
+Confessional 主角：[谁对镜头讲自己的版本]
 自我叙事：[她想让观众相信什么]
-Proof cut：[镜头如何证明/打脸/复杂化她的话]
+证据切片：[镜头如何证明/打脸/复杂化她的话]
 反应镜头：[谁的表情或沉默最有戏]
 可迁移元素：[3-5个具体风格要素]
-避免项：不出现真实Kardashian/Jenner人物、姓名、声音、show title、logo或catchphrase
+避免项：不出现真实 Kardashian/Jenner 人物、姓名、声音、节目名、logo 或口头禅
 ```
 
 ## QA
 
-Before using this style:
+使用这个风格前检查：
 
-- Is there a direct-to-camera confession?
-- Is there a gap between self-presentation and actual footage?
-- Does the drama feel personal, social, and status-aware?
-- Did you use reaction shots instead of explaining every joke?
-- Did you avoid real Kardashian/Jenner identity, names, voices, show titles, and brand assets?
+- 是否有对镜头自白？
+- 自我呈现和真实画面之间是否有落差？
+- drama 是否带有私人关系、社交身份或状态焦虑？
+- 是否用反应镜头承载笑点，而不是把笑点解释完？
+- 是否避开了真实 Kardashian/Jenner 身份、姓名、声音、节目名和品牌资产？
