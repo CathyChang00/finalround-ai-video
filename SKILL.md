@@ -1,11 +1,11 @@
 ---
 name: finalround-ai-video
-description: "FinalRound AI video skill for generating or reviewing FinalRound / FinalRound AI / FRAI social ads, interview copilot videos, Live Interview Copilot scripts, 9:16 Instagram Reels / TikTok / INS prompts, UGC creator briefs, trend-to-FinalRound adaptations, FinalRound video QA, and style modules such as MrBeast Challenge, Kardashian Confessional, and AI Fruit Short Drama. Must follow the canonical FinalRound-INS rules and samples from CathyChang00/ai-video-skill: refs/finalround-ins.md and refs/finalround-ins-samples.md."
+description: "FinalRound AI video skill for generating or reviewing FinalRound / FinalRound AI / FRAI social ads, interview copilot videos, Live Interview Copilot scripts, 9:16 Instagram Reels / TikTok / INS prompts, UGC creator briefs, trend-to-FinalRound adaptations, FinalRound video QA, and style modules such as MrBeast Challenge, Kardashian Confessional, and AI Fruit Short Drama. Must follow this skill's canonical FinalRound-INS rules and samples: references/finalround-ins.md and references/finalround-ins-samples.md."
 ---
 
 # FinalRound AI Video
 
-Use this as a top-level FinalRound video production skill, parallel to `ai-video`.
+Use this as the top-level FinalRound video production skill.
 
 Do not invent a separate FinalRound creative system. The canonical rules are:
 
@@ -20,18 +20,16 @@ Load style/IP libraries when the user requests a style tilt. These libraries are
 
 1. `ips/kardashian-confessional/SKILL.md` for Kardashian-style reality confessional grammar.
 2. `ips/ai-fruit-short-drama/SKILL.md` for AI fruit short drama / Fruit Love Island grammar.
-3. `CathyChang00/ai-video-skill/ips/mrbeast/SKILL.md` as the external reference for MrBeast Challenge structure.
+3. MrBeast-style challenge grammar only when explicitly requested.
 
 ## Source Relationship
 
-These two reference files are copied from:
+These two reference files are the source of truth inside this skill:
 
-- `CathyChang00/ai-video-skill/refs/finalround-ins.md`
-- `CathyChang00/ai-video-skill/refs/finalround-ins-samples.md`
+- `references/finalround-ins.md`
+- `references/finalround-ins-samples.md`
 
-Treat them as the source of truth. If this skill conflicts with either reference file, the reference file wins.
-
-Use the broader `ai-video` skill only for upstream meme/IP/trend inspiration when the user explicitly asks for broad AI-video ideation. Once the output becomes FinalRound-specific, return to this skill and obey the two FinalRound references.
+Do not defer FinalRound prompt structure to another video skill. External style libraries can provide camera grammar or genre flavor, but FinalRound product framing, dialogue rules, CTA behavior, and QA rules come from this skill.
 
 ## Default Execution
 

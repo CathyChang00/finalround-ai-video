@@ -11,17 +11,17 @@ FinalRound AI 竖屏社交广告 prompt 编译器。用于把 Instagram Reels / 
 - INS / Instagram Reels / TikTok / 竖屏9:16广告
 - 把某个热门短视频梗改成 FinalRound 广告
 
-## 和 Meme-Gen 的关系
+## 独立创作框架
 
-不要复制 `refs/meme-gen.md` 的完整内容。FinalRound-INS 要借用的是 Meme-Gen 的**解构方法**，不是它的科技圈讽刺语境。
+FinalRound-INS 是独立的 FinalRound 社交广告创作体系，不依赖其他视频脚本框架。它可以吸收 Instagram Reels、TikTok、真人秀、UGC短剧、AI水果剧等外部内容形态的镜头语法，但产品理解、台词规则、CTA方式和QA规则都以本文件为准。
 
-核心公式改写为：
+核心公式：
 
 ```
 FinalRound产品场景 × 求职者心理痛点 × 社媒梗结构 × Creator表演语法 → 15秒竖屏广告prompt
 ```
 
-默认继承 Meme-Gen 的这些方法：
+默认工作原则：
 - 先提炼梗的核心结构，而不是只模仿表面画面。
 - 前3秒必须有hook。
 - 笑点/冲突要先对齐，再写完整prompt；如果用户还在讨论方向，先输出"笑点结构"而不是直接写长prompt。
@@ -34,12 +34,12 @@ FinalRound产品场景 × 求职者心理痛点 × 社媒梗结构 × Creator表
 - 可以借用"道具编码权力关系"：电脑屏幕大小、候选人坐姿、面试官表情、咖啡/西装/睡衣/简历纸堆都要表达权力和压力，不要用台词解释。
 - 每秒都要有信息或情绪推进。
 
-FinalRound-INS 覆盖 Meme-Gen 的这些默认项：
+FinalRound-INS 固定规则：
 - 视频默认是15秒竖屏9:16，不是16:9横版。
 - 可以在15秒里使用固定机位正反打和硬切，不默认一镜到底。
 - 默认不做end card，用户会人工后期剪辑。
 - 默认不展示产品UI、logo或可读屏幕文字。
-- 默认主产品面是 Live Interview Copilot / Desktop Stealth App，不是泛科技事件，也不是纯meme二创。
+- 默认主产品面是 Live Interview Copilot / Desktop Stealth App，不是泛科技事件，也不是纯梗二创。
 
 ## 产品事实
 
@@ -137,7 +137,7 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 
 ## FinalRound喜剧模式库
 
-像 Meme-Gen 一样，先选1-2个喜剧模式，再写prompt。不要默认所有FinalRound内容都是"面试焦虑崩溃"。
+先选1-2个喜剧模式，再写prompt。不要默认所有FinalRound内容都是"面试焦虑崩溃"。
 
 | 模式 | 笑点结构 | 适合场景 |
 |------|---------|----------|
@@ -168,7 +168,7 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 
 ### MrBeast Challenge
 
-参考 `CathyChang00/ai-video-skill/ips/mrbeast` 的结构，但不要做普通 MrBeast 模仿。核心是"自愿参与的高压挑战"：极端条件、简单规则、明确奖励、倒计时、淘汰或反转。
+不要做普通 MrBeast 模仿。这里只保留可迁移的挑战赛语法：自愿参与、极端条件、简单规则、明确奖励、倒计时、淘汰或反转。
 
 适合 FinalRound 的转译方式：把面试变成一场自愿参加但压力极高的挑战，例如"last candidate to freeze loses"、"answer this system design question in 60 seconds"、"one interview, one shot, no second chances"。奖励不是现金，通常是 offer、callback、dream job、visa window、salary jump 或面试机会本身。
 
