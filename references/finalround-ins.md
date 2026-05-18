@@ -49,6 +49,7 @@ FinalRound-INS 覆盖 Meme-Gen 的这些默认项：
 - 角色真正进入面试时必须和电脑互动，不要只玩手机。
 - 除非用户明确要求，不要展示 FinalRound logo、产品界面、可读UI、可读屏幕文字；如果用户明确要求展示 logo，优先使用真实 logo 素材后期叠加或明确 reference，不依赖文生视频模型凭空生成 logo。
 - 产品露出优先用一句短台词完成，例如 `"Open FinalRound AI."`
+- 当剧情涉及"别人为什么拿到offer/进Google/听起来像已经被录用"时，默认把产品edge写成**结构化表达**，不要写成偷答案或背答案。优先使用 `"Not answers. Structure."`、`"FinalRound AI."` 这类短句。
 - 如果用户要求强产品露出，优先用后期素材或真实B-roll，不依赖文生视频模型生成可读UI。
 - 不要承诺 guaranteed to get hired / guaranteed offer / 30天必入职。可以表达更快、更聪明、更有把握地准备和应对面试。
 
@@ -79,6 +80,19 @@ FinalRound-INS 覆盖 Meme-Gen 的这些默认项：
 - 不要字幕、水印、meme overlay、title card、end card。
 - 默认不是polished ad，不是基础talking head。优先funny、trendy、relatable、out of pocket。
 - 内容比例默认按80%娱乐、20%教育理解。除非用户明确要教程，否则先写娱乐化skit/POV/meme/storytelling。
+
+### POV Hook 规则
+
+用户只要问"写一个POV"或需要视频第一屏文案，默认输出**一句英文短hook**，不要写解释型长句。POV应该描述观众瞬间处境，而不是总结产品卖点。
+
+好例子：
+- `POV: Your classmate got the offer, and you have no idea how.`
+- `POV: Your friend got into Google, and you find out the secret.`
+- `POV: You realize she did not freestyle the interview.`
+
+避免：
+- 过长的因果解释，例如 `POV: It’s graduation day, your friend just got Google, and you realize she wasn’t naturally good at interviews.`
+- 把FinalRound直接塞进POV，除非用户明确要强产品露出。
 
 ## 内容方向
 
@@ -119,6 +133,7 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 - **高机会成本型**：这不是练习，是大厂、签证、裁员后、薪资跃迁机会。例：`"This wasn't practice. This was the interview."`
 - **后悔型**：未来视角回看过去如何差点浪费机会。例：`"Future you is watching you walk into the interview for the job you almost lost."`
 - **公平焦虑型**：不想fake it，只想要结构和提醒。例：`"Not answers. Structure."`
+- **攀比型**：朋友、同学或同事拿到offer/进大厂，主角表面祝福但不理解对方为什么赢。例：`"How do you always sound like they already hired you?"`
 
 ## FinalRound喜剧模式库
 
@@ -144,6 +159,8 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 - **Storytime With Hard Cut Proof**：creator用一句强hook开场，然后硬切到面试场景或屏幕反应证明，不做普通讲解。
 - **Fake Zoom / Teams Call**：模拟线上会议关系，但生成prompt里不要求真实可读会议UI；重点是脸、视线、沉默和反应。
 - **Literal Metaphor**：把"脑子空白""机会溜走""未来的我在看着你"这类心理感受变成可拍的空间或道具。
+- **Offer Envy Social Skit**：朋友/同学/同事在毕业典礼、大厂大厅、party、街头偶遇，一方已经拿到offer，另一方假装祝福但明显不服。重点是微妙攀比、假亲密、眼神和停顿；产品转折落在"结构"或一个隐藏道具，不落在解释性广告。
+- **Back-Collar Label Reveal**：如果用户要求把FinalRound logo做成衣服标签，必须明确"从背后或斜后方拍，翻后衣领内侧标签"，不要拍前胸、前襟、前领或胸口衣料。logo必须来自真实reference image，标签上不要生成其他文字。
 
 ## FinalRound风格模块库
 
@@ -165,6 +182,8 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 
 使用方式：先提取 confessional control、polished contradiction、proof cut、reaction economy、status environment 等风格要素；再把这些要素应用到当前视频。不要把这个库写成 FinalRound 专用模板，也不要使用真实 Kardashian/Jenner 人物、姓名、声音、节目名、logo 或 catchphrase。
 
+实操落地：prompt里不要只写"Kardashian风格"。至少写入 `direct-to-camera confessional close-up`、`hard cut to proof/receipts`、`reaction zoom`、`awkward pause`、`micro-expression` 中的3个具体镜头语法；同时写清"不要真实Kardashian/Jenner人物、姓名、声音、节目名或logo"。
+
 ### AI Fruit Short Drama
 
 纯风格库：`../ips/ai-fruit-short-drama/SKILL.md`，风格要素索引：`../ips/ai-fruit-short-drama/refs/场景结构索引表.md`。当用户指定 AI水果短剧、水果拟人、Fruit Love Island、荒诞水果/物体短剧时，必须先读取这个库。
@@ -176,6 +195,7 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 - 台词是角色表演，不是字幕。prompt里必须写清谁在说、情绪状态和动作。
 - 英文台词要短，15秒内总台词量优先控制在8句以内。
 - 赢家台词越少越好。候选人越慌，Copilot/面试官/未来自己越短促，反差越强。
+- 如果用户指定 Valley girl accent，必须写清所有对白仍然是英文：`strong Valley girl accent, stretched vowels, slight upward intonation, LA mean girls / reality show girls tone`。不要写中文对白，不要中文口音。
 - 沉默可以比大喊更有效。面试官沉默、候选人冻结、手停在键盘上，常常比解释更像真实面试。
 - 不解释笑点，不做道德总结，不在最后一句升华；用硬切、表情或一句短产品动作收住。
 - 每段动作要有递进：自信→迟疑→空白→求助→重新聚焦；不要把多个焦虑画面随机堆在一起。
@@ -289,7 +309,7 @@ ICP心理：一句话说明这条视频打中的求职者心态
 
 1. **HappyHorse / 欢乐马**：默认第一优先级。适合快速批量测试竖屏社媒短剧。提示词要直接、少堆电影术语，重点强化人物身份引用、候选人位置、面试屏幕关系、动作节奏、禁止字幕/水印/可读UI。HappyHorse能力相对简单，不要期待复杂多镜头精细执行；需要用硬切时间轴写清楚每一段。
 2. **Kling / 可灵**：第二优先级。适合多镜头、正反打、复杂一些的叙事、音效或视频编辑。写清固定机位、硬切、左右视线、无变焦/推进/环绕。Kling容易执行镜头语言，但也容易加戏，所以禁止项要硬。
-3. **Seedance 2**：第三优先级。人物参考和社媒质感不错，但生成慢。适合需要 influencer 身份一致性、多参考图、中文主体 prompt 的版本。用清晰时间码控制动作，避免太抽象。
+3. **Seedance 2**：第三优先级。人物参考和社媒质感不错，但生成慢；长英文对白和复杂音效不如Kling稳定。适合需要 influencer 身份一致性、多参考图、中文主体 prompt 的版本。用清晰时间码控制动作，避免太抽象。若15秒多台词版本失败、排队过久或效果差，优先压缩成10秒版本测试，保留同一冲突、同一句产品收尾和核心台词。
 4. **Sora 2 / Sora 2 Pro**：第四优先级。适合需要更自然英语台词、同步声音、电影感更强的版本。可写得更自然口语化，但仍要保持无字幕、无end card、无可读UI。
 5. **Veo 3**：第五优先级。适合写实、电影质感、环境氛围强的版本。对meme skit和强台词正反打不是默认首选；若使用，减少复杂剧情，强化单一情绪和真实表演。
 
