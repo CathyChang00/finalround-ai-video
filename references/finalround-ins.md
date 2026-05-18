@@ -195,7 +195,7 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 - 台词是角色表演，不是字幕。prompt里必须写清谁在说、情绪状态和动作。
 - 英文台词要短，15秒内总台词量优先控制在8句以内。
 - 赢家台词越少越好。候选人越慌，Copilot/面试官/未来自己越短促，反差越强。
-- 如果用户指定 Valley girl accent，必须写清所有对白仍然是英文：`strong Valley girl accent, stretched vowels, slight upward intonation, LA mean girls / reality show girls tone`。不要写中文对白，不要中文口音。
+- 如果用户指定白女 / white women / white girls，默认使用 Valley girl accent；如果用户显式指定 Valley girl accent，也按同一规则执行。必须写清所有对白仍然是英文：`strong Valley girl accent, stretched vowels, slight upward intonation, LA mean girls / reality show girls tone`。不要写中文对白，不要中文口音。
 - 沉默可以比大喊更有效。面试官沉默、候选人冻结、手停在键盘上，常常比解释更像真实面试。
 - 不解释笑点，不做道德总结，不在最后一句升华；用硬切、表情或一句短产品动作收住。
 - 每段动作要有递进：自信→迟疑→空白→求助→重新聚焦；不要把多个焦虑画面随机堆在一起。
