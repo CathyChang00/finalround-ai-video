@@ -1,116 +1,117 @@
 ---
 name: kardashian-confessional
-description: FinalRound AI video IP/style library for Kardashian-family-style reality TV confessionals. Use inside finalround-ai-video when the user wants Kardashian style, reality-show confession, glam interview drama, polished-but-panicking candidate energy, creator confessionals, or hard cuts between self-presentation and real interview pressure.
+description: Kardashian-style reality confessional research library for AI video work. Use when the user says a video should lean Kardashian, reality-show confession, glam family drama, polished self-narration, luxury domestic drama, direct-to-camera confession, or confession-cutaway-receipt structure. This is a pure style-analysis library, not a FinalRound-specific template and not a celebrity impersonation tool.
 ---
 
-# Kardashian Confessional
+# Kardashian Confessional Style Library
 
-Use this as a FinalRound-specific style library, not a celebrity imitation tool.
+Use this library to understand what the user means when she says "往卡戴珊风格倾斜." Extract transferable style grammar, then apply it to the user's actual subject.
 
-Do not depict, name, impersonate, or reference actual Kardashian family members. Extract the reality-TV grammar: polished confessional, emotional self-narration, glamorous composure, hard-cut proof, small personal drama, and deadpan reaction.
+Do not depict, name, impersonate, or recreate actual Kardashian/Jenner family members. Do not use their show titles, likenesses, voices, catchphrases, logos, or protected brand assets. The reusable value is the reality-TV grammar.
 
-## Core Logic
+## Core Definition
 
-Kardashian-style reality grammar is built on a gap between self-presentation and reality.
+Kardashian-style reality confession is not just luxury or makeup. It is a polished self-narration machine.
 
-For FinalRound, the gap is:
-
-```
-I am totally fine before the interview
-→ hard cut to real interview pressure
-→ composure breaks
-→ FinalRound gives structure
-→ character regains control but stays in confessional attitude
-```
-
-The product should enter as a practical edge during a real online interview, usually Live Interview Copilot / Desktop Stealth App. Do not turn the ad into luxury lifestyle content.
-
-## Workflow
-
-### Step 0: Extract the Drama
-
-Identify:
-
-**Self-image:** What does the candidate want people to think?
-
-**Reality pressure:** What actually happens in the interview?
-
-**Confessional line:** What is the first sentence that reveals denial, delusion, or panic?
-
-**Product turn:** At what second does FinalRound help her regain structure?
-
-### Step 1: Match a Scene Structure
-
-Open `refs/场景结构索引表.md` and choose 2-3 candidate structures. If the user is still deciding, output candidates first.
-
-Short direction format:
+The basic engine:
 
 ```
-产品面：Live Interview Copilot / Desktop Stealth App
-ICP心理：[一句话]
-风格模块：Kardashian Confessional
-场景结构：[索引编号 + 名称]
-3秒hook：[confessional第一句话]
-现实打脸：[第几秒切到真实面试压力]
-FinalRound转折：[第几秒进入产品edge]
-禁止项：不出现真实Kardashian人物/姓名/品牌，不出现字幕、水印、可读UI、logo、end card
+composed self-presentation
+→ direct-to-camera confession
+→ hard cut to messy evidence
+→ reaction from another person / group
+→ character reclaims control of the story
 ```
 
-### Step 2: Write the 15s Prompt
+The drama is usually personal and specific, but shot like it matters. The character is both participant and narrator: she performs the event, then explains the event, then reframes the event.
 
-Use one 15-second vertical 9:16 prompt. The default structure is fixed interview-camera confessional plus hard cut to laptop interview.
+## Research Basis
 
-Required elements:
+This library is based on reality-TV confessional analysis and Kardashian media coverage, not on surface luxury cues.
 
-- Fixed confessional camera, close face, polished lighting.
-- One hard cut to real computer interview pressure.
-- Candidate must interact with laptop/desktop in the real interview scene.
-- All spoken dialogue must be English.
-- No readable UI, subtitles, logo, title card, or end card.
+Key takeaways:
 
-## Visual Grammar
+- Reality-TV confessionals are a defining genre device: cast members speak directly to camera, giving viewers "thought bubbles" and a point of view on footage.
+- Confessionals combine authenticity and artifice: they feel candid, but they also give the show a way to shape interpretation.
+- Kardashian-style confessionals are especially about narrative control, persona construction, family/business/status context, and polished relatability.
+- The Hulu-era visual environment is glossier and more brand-aware: confessional outfits, showrooms, closets, domestic luxury spaces, and product/business context are part of the frame.
+
+## What To Extract
+
+When adapting an existing Instagram video, extract these levers:
+
+1. **Confessional Control**: a character looks directly into camera and narrates her own version of what happened.
+2. **Polished Contradiction**: the person looks composed, styled, and camera-ready while describing something chaotic, petty, stressful, or emotionally messy.
+3. **Proof Cut**: cut away from the confession to a short scene that proves or contradicts what she just said.
+4. **Micro-Drama Framed Big**: a small social, work, dating, family, money, or status conflict is framed with high seriousness.
+5. **Status Environment**: soft luxury, clean domestic spaces, glam rooms, closets, cars, kitchens, offices, couches, phone calls, and mirrors act as status context.
+6. **Reaction Economy**: eye rolls, silent pauses, fake smiles, side glances, and tiny facial reactions carry more meaning than long jokes.
+7. **Narrative Self-Defense**: the character is not only experiencing drama; she is trying to control how the audience interprets her.
+8. **Group Orbit**: friends, sisters, assistants, partners, stylists, or group chats become a social jury around the main character.
+
+## Camera And Editing Grammar
 
 Use:
 
-- close-up confessional framing
-- soft bright reality-show lighting
-- clean makeup/hair/outfit
-- composed posture breaking for one second
-- hard cuts, reaction shots, slight eye-rolls, deadpan pauses
-- elegant bedroom, closet, vanity, kitchen island, or clean home-office setup
+- fixed direct-to-camera confessional close-up
+- soft bright lighting, polished skin, clean background
+- composed posture, controlled emotion, micro-expression
+- hard cuts between confession and evidence
+- short reaction shots from other characters
+- phone call, mirror, kitchen island, car interior, closet, glam room, or couch setup
+- pacing that alternates "she says the official version" and "the footage tells on her"
 
 Avoid:
 
-- actual Kardashian names, likenesses, show titles, logos, or catchphrases
-- luxury flex as the main idea
-- handheld chaos unless it is the reality cutaway
+- shaky vlog chaos as the main camera language
 - dark cinematic lighting
-- long monologues that cannot fit into 15 seconds
+- slapstick as the main joke
+- over-explaining the drama
+- generic luxury montage with no confession or contradiction
+- copying real people, real show names, or real brand assets
 
-## Dialogue Rules
+## Voice And Dialogue
 
-The first line should sound like a confession, not an ad.
+The voice is controlled, declarative, and slightly self-aware. It often sounds like a person building a case for herself.
 
-Good shapes:
+Good line shapes:
 
-- "I said I was calm. That was inaccurate."
-- "I love pretending I'm prepared."
-- "I was giving confident. My brain was giving nothing."
-- "I thought the interview was going to be cute. It was not."
+- "I was being calm. Everyone else was choosing drama."
+- "I did not say it was a crisis. I said it was extremely inconvenient."
+- "At that point, I realized the room had misunderstood my energy."
+- "I was trying to be supportive. Apparently, my face disagreed."
+- "I love when people ask for honesty and then hate the answer."
 
-Keep the product line short:
+Do not write long monologues. The line should create a self-image, then the cutaway should test it.
 
-- "Open FinalRound AI."
-- "I need structure."
-- "Not a pep talk. Structure."
+## Adaptation Workflow
+
+1. Identify the original video's conflict.
+2. Decide who gets the confessional camera.
+3. Write the character's polished self-version in one sentence.
+4. Choose the proof cut that contradicts or complicates that sentence.
+5. Add one reaction shot from the social orbit.
+6. End with a small reframe, deadpan line, or controlled emotional reset.
+
+Short output format:
+
+```
+风格倾斜：Kardashian Confessional
+原视频核心冲突：[一句话]
+Confessional主角：[谁对镜头讲自己的版本]
+自我叙事：[她想让观众相信什么]
+Proof cut：[镜头如何证明/打脸/复杂化她的话]
+反应镜头：[谁的表情或沉默最有戏]
+可迁移元素：[3-5个具体风格要素]
+避免项：不出现真实Kardashian/Jenner人物、姓名、声音、show title、logo或catchphrase
+```
 
 ## QA
 
-Before finalizing:
+Before using this style:
 
-- Is it a reality-confessional structure, not generic influencer talking head?
-- Does the reality cut prove the confession?
-- Is the product turn tied to real interview pressure?
-- Did it avoid actual Kardashian people, names, show titles, and likenesses?
-- Did it keep all spoken dialogue English?
-- Did it avoid readable UI, logo, subtitles, watermarks, and end card?
+- Is there a direct-to-camera confession?
+- Is there a gap between self-presentation and actual footage?
+- Does the drama feel personal, social, and status-aware?
+- Did you use reaction shots instead of explaining every joke?
+- Did you avoid real Kardashian/Jenner identity, names, voices, show titles, and brand assets?

@@ -16,10 +16,10 @@ Always load `references/finalround-ins.md` before creating, rewriting, or judgin
 
 Load `references/finalround-ins-samples.md` when the user asks for a finished prompt, asks for examples, references a previous FinalRound style, or when the output needs calibration against battle-tested samples.
 
-Load style/IP libraries when the selected style module requires them:
+Load style/IP libraries when the user requests a style tilt. These libraries are pure style research libraries, not FinalRound-specific templates:
 
-1. `ips/kardashian-confessional/SKILL.md` for Kardashian-style reality confessional videos.
-2. `ips/ai-fruit-short-drama/SKILL.md` for AI fruit short drama videos.
+1. `ips/kardashian-confessional/SKILL.md` for Kardashian-style reality confessional grammar.
+2. `ips/ai-fruit-short-drama/SKILL.md` for AI fruit short drama / Fruit Love Island grammar.
 3. `CathyChang00/ai-video-skill/ips/mrbeast/SKILL.md` as the external reference for MrBeast Challenge structure.
 
 ## Source Relationship
@@ -37,7 +37,7 @@ Use the broader `ai-video` skill only for upstream meme/IP/trend inspiration whe
 
 1. Read `references/finalround-ins.md`.
 2. Classify the request using its workflow: product face, ICP psychology, style module, comedy mode, visual template, hook, turn, restrictions.
-3. If the style module is Kardashian Confessional or AI Fruit Short Drama, read the matching `ips/` library and its scene index before proposing concepts.
+3. If the style module is Kardashian Confessional or AI Fruit Short Drama, read the matching `ips/` library and its style index before proposing concepts. Extract style elements first; do not force the library into a FinalRound-specific template.
 4. If writing a prompt, also read `references/finalround-ins-samples.md` and match its level of specificity.
 5. Output in the format requested by the user. If the user is still discussing direction, use the short direction format from `finalround-ins.md`; if the user asks for a prompt, write the full 15-second 9:16 prompt.
 6. Run the QA rules in `finalround-ins.md` before finalizing.

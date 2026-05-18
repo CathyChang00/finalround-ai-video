@@ -147,7 +147,7 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 
 ## FinalRound风格模块库
 
-风格模块决定整条视频的外壳和节奏。先选风格模块，再选喜剧模式和视觉模板。不要只写"某某风格"，必须把该风格转译成 FinalRound 的面试场景、产品转折和15秒动作弧线。
+风格模块决定整条视频的外壳和节奏。先选风格模块，再选喜剧模式和视觉模板。不要只写"某某风格"，必须先读取对应风格库，提取可迁移要素，再按当前任务应用。
 
 ### MrBeast Challenge
 
@@ -161,27 +161,15 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 
 ### Kardashian Confessional
 
-详细库：`../ips/kardashian-confessional/SKILL.md`，场景结构索引：`../ips/kardashian-confessional/refs/场景结构索引表.md`。当用户指定卡戴珊风格、reality-show confession、精致嘴硬/面试崩溃反差时，必须先读取这个库。
+纯风格库：`../ips/kardashian-confessional/SKILL.md`，风格要素索引：`../ips/kardashian-confessional/refs/场景结构索引表.md`。当用户指定卡戴珊风格、reality-show confession、精致嘴硬、glam drama、direct-to-camera confession 时，必须先读取这个库。
 
-核心不是奢华，而是 reality-show confession：人物对镜头讲自己的崩溃、精致、嘴硬和小型drama，再硬切到真实面试压力证明她刚才不是夸张。
-
-适合 FinalRound 的转译方式：候选人像真人秀采访一样对镜头说自己"totally fine"，下一秒硬切到线上面试里彻底卡住；或未来自己/室友/同事像真人秀旁白一样吐槽她面试前的自欺欺人。
-
-节奏规则：0-3秒是对镜 confessional 金句；3-7秒切到现实打脸；7-11秒人物嘴硬或情绪升级；11-13秒打开 FinalRound；13-15秒用一个冷静、短促、带态度的反应收住。
-
-视觉规则：精致室内、近景脸部、干净妆发、柔和但明亮的 reality-show lighting、固定采访机位、硬切到电脑面试场景。不要写成豪宅炫富广告，不要让品牌、logo或可读文字抢戏。
+使用方式：先提取 confessional control、polished contradiction、proof cut、reaction economy、status environment 等风格要素；再把这些要素应用到当前视频。不要把这个库写成 FinalRound 专用模板，也不要使用真实 Kardashian/Jenner 人物、姓名、声音、节目名、logo 或 catchphrase。
 
 ### AI Fruit Short Drama
 
-详细库：`../ips/ai-fruit-short-drama/SKILL.md`，场景结构索引：`../ips/ai-fruit-short-drama/refs/场景结构索引表.md`。当用户指定 AI水果短剧、水果拟人、荒诞水果面试短剧时，必须先读取这个库。
+纯风格库：`../ips/ai-fruit-short-drama/SKILL.md`，风格要素索引：`../ips/ai-fruit-short-drama/refs/场景结构索引表.md`。当用户指定 AI水果短剧、水果拟人、Fruit Love Island、荒诞水果/物体短剧时，必须先读取这个库。
 
-核心是"拟人化水果短剧"：用水果角色承载人类求职焦虑，表演夸张、情绪直接、冲突简单，像AI短剧一样荒诞但容易懂。
-
-适合 FinalRound 的转译方式：一个水果候选人正在面试，另一个水果/未来水果/桌面道具提醒它别再 ramble；FinalRound 的功能以电脑旁的实时结构提示或一句短台词进入。水果只是视觉壳，产品落点仍然是 Live Interview Copilot / Desktop Stealth App。
-
-节奏规则：0-3秒水果角色出现明确危机；3-6秒面试官沉默或问题压下来；6-10秒水果候选人崩溃、出汗、滚动或被道具压迫；10-13秒 FinalRound 进入；13-15秒水果恢复结构化表达或出现荒诞反应。
-
-视觉规则：水果必须有清楚表情、眼睛、嘴部和身体动作；画面可夸张、鲜艳、短剧化，但仍保持9:16社交广告。不要让水果短剧变成儿童动画或脱离面试场景；不要生成可读UI、字幕、logo或中文对白。
+使用方式：先提取 object-as-person casting、reality-show stakes、overt emotion、synthetic weirdness、fast plot turn、cliffhanger energy 等风格要素；再把这些要素应用到当前视频。不要把这个库写成 FinalRound 专用模板，也不要把水果短剧拍成儿童动画或普通可爱动画。
 
 ## 台词与动作弧线
 
