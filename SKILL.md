@@ -14,7 +14,7 @@ Do not invent a separate FinalRound creative system. The canonical rules are:
 
 Always load `references/finalround-ins.md` before creating, rewriting, or judging any FinalRound video concept, prompt, script, creator brief, or ad direction.
 
-Load `references/finalround-ins-samples.md` when the user asks for a finished prompt, asks for examples, references a previous FinalRound style, or when the output needs calibration against battle-tested samples.
+Load `references/finalround-ins-samples.md` when the user asks for a finished prompt, asks for examples, references a previous FinalRound style, or when the output needs calibration against battle-tested samples. Treat all numbered sample entries as one canonical sample list; do not create separate sample tiers. If Cathy marks a sample as unfinished or draft, exclude it from durable rule extraction until she approves it.
 
 Load style/IP libraries when the user requests a style tilt. These libraries are pure style research libraries, not FinalRound-specific templates:
 
@@ -34,11 +34,13 @@ Do not defer FinalRound prompt structure to another video skill. External style 
 ## Default Execution
 
 1. Read `references/finalround-ins.md`.
-2. Classify the request using its workflow: product face, ICP psychology, style module, comedy mode, visual template, hook, turn, restrictions.
-3. If the style module is Kardashian Confessional or AI Fruit Short Drama, read the matching `ips/` library and its style index before proposing concepts. Extract style elements first; do not force the library into a FinalRound-specific template.
-4. If writing a prompt, also read `references/finalround-ins-samples.md` and match its level of specificity.
-5. Output in the format requested by the user. If the user is still discussing direction, use the short direction format from `finalround-ins.md`; if the user asks for a prompt, write the full 15-second 9:16 prompt.
-6. Run the QA rules in `finalround-ins.md` before finalizing.
+2. Classify the request using its workflow: product face, ICP psychology, social/status dynamic, camera ownership, spatial blocking, reveal mechanism, style module, comedy mode, visual template, hook, turn, restrictions.
+3. For INS / Instagram / TikTok work, establish a one-line English POV before writing or optimizing the full prompt, unless the user already gives a locked POV. Treat the POV as the video's north star: it should state the viewer-facing situation, not the product explanation.
+4. If the user asks to optimize the skill from approved prompts, patch durable rules in `references/finalround-ins.md`; do not only add examples. Base the rules on finished prompts, and skip any prompt Cathy calls unfinished.
+5. If the style module is Kardashian Confessional or AI Fruit Short Drama, read the matching `ips/` library and its style index before proposing concepts. Extract style elements first; do not force the library into a FinalRound-specific template.
+6. If writing a prompt, also read `references/finalround-ins-samples.md` and match its level of specificity.
+7. Output in the format requested by the user. If the user is still discussing direction, use the short direction format from `finalround-ins.md`; if the user asks for a prompt, write the full 15-second 9:16 prompt.
+8. Run the QA rules in `finalround-ins.md` before finalizing.
 
 ## Hard Rules
 

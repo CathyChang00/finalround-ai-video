@@ -23,6 +23,8 @@ FinalRound产品场景 × 求职者心理痛点 × 社媒梗结构 × Creator表
 
 默认工作原则：
 - 先提炼梗的核心结构，而不是只模仿表面画面。
+- 先用一句英文 POV 锁定主旨。POV 是整条视频的主旨锚点，描述观众正在看到的荒诞处境、谁在赢、谁在慌、为什么值得继续看；不要把产品解释塞进 POV。
+- 先写清人物之间的社会关系和权力差，而不是先写场景。FinalRound 短剧的冲突通常来自谁赢了、谁不服、谁在装、谁知道秘密。
 - 前3秒必须有hook。
 - 笑点/冲突要先对齐，再写完整prompt；如果用户还在讨论方向，先输出"笑点结构"而不是直接写长prompt。
 - 先判断喜剧模式，再选择视觉/剪辑模板；不要默认所有内容都是"焦虑崩溃"。
@@ -33,6 +35,18 @@ FinalRound产品场景 × 求职者心理痛点 × 社媒梗结构 × Creator表
 - 可以借用"屏幕叙事"思路：电脑屏幕、视频通话窗口、面试官沉默、输入光标、倒计时都可以成为推动情绪的角色。
 - 可以借用"道具编码权力关系"：电脑屏幕大小、候选人坐姿、面试官表情、咖啡/西装/睡衣/简历纸堆都要表达权力和压力，不要用台词解释。
 - 每秒都要有信息或情绪推进。
+
+
+### 首版质量底线
+
+如果用户给的是灵感碎片，第一版不能只把关键词扩写成场景。必须先把以下4件事写进 prompt 本体：
+
+1. **关系张力**：明确谁在赢、谁不服、谁表面友好、谁在抢注意力、谁掌握秘密。没有关系张力的 prompt 通常会变成普通广告或普通校园 vlog。
+2. **镜头所有权**：明确镜头属于谁，谁在镜头内，谁只能画外音，谁不能拿麦或抢主持人身份。街采、vlog、记者围堵类 prompt 尤其要先写这一条。
+3. **空间站位**：明确前排/后排、近景/远景、背后/斜后方、角色之间距离和移动方向。不要只写“人群中”或“走近”，否则模型会把关键人物放远、放错方向或让错误的人入镜。
+4. **揭示机制**：明确 FinalRound 如何被发现或说出。FinalRound 露出应是秘密武器、结构优势、标签证据、轻声反转或一句短产品动作，不要写成角色主动讲广告说明。
+
+成型样例反推规则时，只使用 Cathy 已确认跑通的 prompt。用户明确说还没写好的 prompt 先不要拿来抽规则。
 
 FinalRound-INS 固定规则：
 - 视频默认是15秒竖屏9:16，不是16:9横版。
@@ -48,8 +62,9 @@ FinalRound-INS 固定规则：
 - Interview Copilot 是真实面试中的实时辅助，不是 mock interview，不是单纯预演工具。不要把Mock Interview、Resume Builder、Auto Apply写成默认主卖点。
 - 角色真正进入面试时必须和电脑互动，不要只玩手机。
 - 除非用户明确要求，不要展示 FinalRound logo、产品界面、可读UI、可读屏幕文字；如果用户明确要求展示 logo，优先使用真实 logo 素材后期叠加或明确 reference，不依赖文生视频模型凭空生成 logo。
-- 产品露出优先用一句短台词完成，例如 `"Open FinalRound AI."`
-- 当剧情涉及"别人为什么拿到offer/进Google/听起来像已经被录用"时，默认把产品edge写成**结构化表达**，不要写成偷答案或背答案。优先使用 `"Not answers. Structure."`、`"FinalRound AI."` 这类短句。
+- 产品露出优先用一句短台词完成，例如 `"Open FinalRound AI."`、`"I used FinalRound AI."`、`"Because we used FinalRound AI."`、`"Actually... I used FinalRound AI."`。
+- 当剧情涉及“别人为什么拿到 offer / 进大厂 / 听起来像已经被录用”时，不要默认偷懒写成 `"Not answers. Structure."`。先根据剧情选择更具体的产品 edge：实时听题、实时转写、给 talking points、给回答框架、帮候选人在 live interview 里稳住表达。`"Not answers. Structure."` 只能在用户明确喜欢这个句式或剧情真的需要极短反差时使用。
+- Entertainment skit 默认先演出社交处境和人物状态，FinalRound AI 的名字或产品揭示通常放在第10秒之后；除非用户明确要产品开场、教程、demo或强卖点，不要在前3秒直接把 FinalRound 塞进 POV 或第一句台词。
 - 如果用户要求强产品露出，优先用后期素材或真实B-roll，不依赖文生视频模型生成可读UI。
 - 不要承诺 guaranteed to get hired / guaranteed offer / 30天必入职。可以表达更快、更聪明、更有把握地准备和应对面试。
 
@@ -67,6 +82,20 @@ FinalRound-INS 固定规则：
 - prompt里写 `Use ref [1] as the exact influencer identity` 或同义中文，保留参考人物的脸、发型、穿搭风格、年龄感、妆容和整体气质。
 - 面试官、招聘官、HR、boss 等对手方可以按剧情另写，不默认使用 influencer 资产，除非用户指定。
 - 不要把 influencer 写成通用"woman"后丢失身份一致性；生成前必须明确引用 ref 或素材路径。
+
+
+### 社媒夸张人设 shorthand
+
+以下是 FinalRound 短剧里的虚构 casting shorthand，用来提升 AI 视频角色识别度，不是现实人群判断。用户显式指定其他设定时，以用户设定为准。
+
+- **白女 / white girl / blonde white girl**：默认 Valley girl accent + fit body + glam makeup + 开放夸张的 party / graduation outfit，例如 white satin mini dress、open black graduation gown、heels；气质是漂亮、松弛、有 mean girl 式自信。
+- **亚女 / Asian girl / Asian American girl / ABG**：默认 Asian American ABG 人设：fit body、精致妆容、sleek hair、姿态放松、playful mean girl confidence。穿着性感但更克制，例如 fitted white mini dress、satin slip dress、cropped cardigan；如果她是赢家，台词用 Valley girl accent。
+- **亚男 / Asian guy / Asian male student**：默认高压 nerd 高成就人设：高度数眼镜、干净衬衫、黑色毕业袍、4.0 GPA、紧张、过度准备但临场卡住。若用户说男生没有口音，必须写 clean natural American English；若用户要求父母 Chinglish，只把口音给父母。
+- **亚洲父母 / Asian parents**：适合家庭压力喜剧。父母可以 heavy Chinglish accent，语速急、声音大、像全家命运压在面试上；孩子可以形成反差，平静、懒散、没有口音。
+- **白男 tech bro**：默认 athletic / casual confidence、黑色毕业袍里穿 T-shirt 或 polo、拿咖啡、嘴硬但没有 offer。
+- **nerd**：默认厚眼镜、姿态僵硬、抱电脑或简历、说话容易卡住；适合承担“我明明会但说不出来”的角色。
+
+写 prompt 时要把 shorthand 展开成可见角色卡：体态、穿着、妆容、姿态、能量和口音都要落地，不要把“白女/亚女/tech bro/nerd”原样丢给模型。
 
 ## 默认规格
 
@@ -89,6 +118,9 @@ FinalRound-INS 固定规则：
 - `POV: Your classmate got the offer, and you have no idea how.`
 - `POV: Your friend got into Google, and you find out the secret.`
 - `POV: You realize she did not freestyle the interview.`
+- `POV: Your parents are panicking harder than you before your Google interview.`
+- `POV: 100 graduates. 100 interviews. One offer.`
+- `POV: Everyone graduated from Ivy, but only she got the offer.`
 
 避免：
 - 过长的因果解释，例如 `POV: It’s graduation day, your friend just got Google, and you realize she wasn’t naturally good at interviews.`
@@ -134,6 +166,9 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 - **后悔型**：未来视角回看过去如何差点浪费机会。例：`"Future you is watching you walk into the interview for the job you almost lost."`
 - **公平焦虑型**：不想fake it，只想要结构和提醒。例：`"Not answers. Structure."`
 - **攀比型**：朋友、同学或同事拿到offer/进大厂，主角表面祝福但不理解对方为什么赢。例：`"How do you always sound like they already hired you?"`
+- **抢镜型**：一群人都在解释自己没赢，真正赢家从同一簇人群后排挤进镜头，用一句话夺走视觉中心。适合毕业街采、校园 vlog、club winner girls。
+- **家庭压力型**：父母比候选人更慌，把一个面试拍成家庭命运时刻；候选人越淡定，FinalRound reveal 越像反高潮。
+- **公开祝贺/私密揭秘型**：外界都在祝贺某人拿到机会，记者或同事追问原因，角色用低声或一句短话揭示 FinalRound。适合电梯口、办公室走廊、科技新闻 parody。
 
 ## FinalRound喜剧模式库
 
@@ -147,6 +182,10 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 | **荒诞加码** | 求职混乱每一拍更严重，但主角还在假装"我没事" | 拒信、投递、日历、面试提醒、简历版本失控 |
 | **反高潮** | 巨大焦虑铺垫后，用一句极短的产品动作落地 | `"Open FinalRound AI."`、"Breathe."、"Answer the question." |
 | **字面化隐喻** | 把求职者的心理隐喻变成真实画面 | 大脑离开会议、简历黑洞、机会从门缝溜走、未来自己敲书墙 |
+| **状态揭穿** | 赢家看起来像自然强者，别人通过追问、标签、近景或抢镜发现她用了结构化工具 | offer envy、毕业街采、大厂大厅、club winner girls |
+| **群体衬托赢家** | 多个高资历/高努力角色失败，赢家用更松弛的姿态赢，形成状态差 | challenge arena、Ivy毕业季、tech bro vs ABG |
+| **家庭错位** | 父母极度恐慌，候选人极度淡定，用硬切结果证明淡定不是摆烂 | 父母叫醒、面试日、offer email proof |
+| **公开围堵私密揭秘** | 公开场合被追问，最后进入低声/ASMR/近景 reveal | tech news elevator、记者围堵、office walkout |
 
 ## FinalRound视觉模板库
 
@@ -161,6 +200,20 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 - **Literal Metaphor**：把"脑子空白""机会溜走""未来的我在看着你"这类心理感受变成可拍的空间或道具。
 - **Offer Envy Social Skit**：朋友/同学/同事在毕业典礼、大厂大厅、party、街头偶遇，一方已经拿到offer，另一方假装祝福但明显不服。重点是微妙攀比、假亲密、眼神和停顿；产品转折落在"结构"或一个隐藏道具，不落在解释性广告。
 - **Back-Collar Label Reveal**：如果用户要求把FinalRound logo做成衣服标签，必须明确"从背后或斜后方拍，翻后衣领内侧标签"，不要拍前胸、前襟、前领或胸口衣料。logo必须来自真实reference image，标签上不要生成其他文字。
+
+- **Campus Street Interview / Fisheye Off-Camera Host**：毕业典礼或校园草坪街采，轻微鱼眼广角、手持不稳、突然甩镜、学生抢镜。主持人必须全程不露脸、不出镜、不拿麦，只能作为画外音提问；画面里的学生只说自己的台词，不能张嘴说主持人的问题。站位要写清第一排/第二排关系，赢家不能站得太远，最好从同一簇人群后排挤进镜头。
+- **Graduation Club Winner Girls**：毕业后夜店或 party，赢家群体已经拿到 offer。画面重点是手机俯拍、轻微 fisheye、拍摄者也在跳、disco ball碎光、confetti、香槟、graduation caps 和挤压感。不要拍成干净广告片；FinalRound reveal 来自采访追问后的 winner answer。
+- **Creator Challenge Arena**：把面试机会拍成无害挑战赛：极端条件、简单规则、淘汰反馈、最后一个赢家。必须写清参与者、面试任务、淘汰规则、奖励和赢家角色；不要暴力、武器、血或真实 MrBeast/Jimmy Donaldson 元素。
+- **Parent Panic Hard Cut Proof**：先用闹钟/父母/卧室制造家庭压力，再让候选人用一句短产品 reveal 反高潮，最后硬切 offer email 或结果证明。屏幕只能是模糊 offer email 布局，不要真实公司 logo 或可读长文字。
+- **Tech News Elevator / ASMR Reveal**：一个连续手持镜头里有电梯内外两个空间。电梯里是同事祝贺，电梯外是记者/tech blogger 追问；角色必须正面从电梯里走出来，镜头后退跟拍，最后环境声压低进入 ASMR 近景，用一句轻声产品 reveal 收住。
+- **Political / Public Figure Interview Parody**：真实人物参考只能用于 parody reenactment 或 creator skit，不是真实新闻 footage、不是公开声明、不是背书。优先写 `Trump-like candidate`、`角色A` 这类标签；如果用户明确要求真实姓名或 reference，保留用户意图，同时写清 parody、安全边界、无新闻台标、无真实 logo、无可读文字。
+
+## 真实人物与新闻梗参考
+
+- 如果用户用真实科技人物、CEO、researcher、政治人物或近期新闻做灵感，生成 prompt 默认优先改成 `角色A`、`角色B`、`Trump-like candidate` 这类标签；除非用户明确要求，不在画面或对白里出现真实姓名。
+- 可以使用 reference image 保持外观、穿搭和气质，但要写清不要生成参考图上的文字、真实公司 logo、可读 badge、新闻台标或产品 UI。
+- 不要让真实人物听起来像在公开背书 FinalRound。更安全的结构是 parody / creator skit：记者追问、角色低声说一个秘密、周围人震惊。
+- 如果用户明确要求使用真实名字或特定人物 reference，必须保留 parody / skit / reenactment 边界，并避免“真实公开声明”语气。
 
 ## FinalRound风格模块库
 
@@ -196,6 +249,9 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 - 英文台词要短，15秒内总台词量优先控制在8句以内。
 - 赢家台词越少越好。候选人越慌，Copilot/面试官/未来自己越短促，反差越强。
 - 如果用户指定白女 / white women / white girls，默认使用 Valley girl accent；如果用户显式指定 Valley girl accent，也按同一规则执行。必须写清所有对白仍然是英文：`strong Valley girl accent, stretched vowels, slight upward intonation, LA mean girls / reality show girls tone`。不要写中文对白，不要中文口音。
+- 如果用户指定父母 heavy Chinglish accent，只给父母这个口音；孩子/候选人是否有口音按用户设定，不要自动把同一种口音分配给所有亚裔角色。
+- 画外音主持人、记者、面试官、受访者的台词归属必须写死。主持人全程画外音时，画面里的学生不能拿麦、不能说主持人的问题、不能出现主持人反应镜头。
+- 如果用户给出精确台词，台词不要动。必要时在 prompt 末尾加 `The only spoken lines are: ...` 来防止模型加词。
 - 沉默可以比大喊更有效。面试官沉默、候选人冻结、手停在键盘上，常常比解释更像真实面试。
 - 不解释笑点，不做道德总结，不在最后一句升华；用硬切、表情或一句短产品动作收住。
 - 每段动作要有递进：自信→迟疑→空白→求助→重新聚焦；不要把多个焦虑画面随机堆在一起。
@@ -204,6 +260,8 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 
 - 优先人物镜头，不依赖产品UI解释卖点。
 - 可以使用固定机位正反打、硬切、两个空间交叉剪辑，这是INS/Reels梗结构，不受"15秒默认一镜到底"限制。
+- 如果是街采、party、club 或现场 vlog，明确手机镜头所有权：轻微 fisheye、手持晃动、俯拍/怼脸/被人群挤开都要服务真实社交现场，不要被模型拍成三脚架广告片。
+- 如果是电梯/走廊围堵，一个连续镜头必须写清两个空间、角色移动方向、镜头后退跟拍、环境声如何压低。
 - 当用户要求两个人像在对话但不在同一空间时，使用严格视线规则：A朝画面右侧看，B朝画面左侧看，通过硬切让视线相接。
 - 不要分屏、不要同框反射、不要同画面互动，除非用户明确要求。
 - 避免复杂镜头运动。用户强调简单正反打时，写清楚：固定机位、硬切、无变焦、无推进、无滑轨、无跟拍、无环绕。
@@ -236,18 +294,22 @@ All spoken dialogue and voiceover must be English only. No Chinese spoken words.
 5. **写Concept/Hook/笑点结构**：用1段concept + 1句first-3s hook + 1句转折说明，不先写长prompt。
 6. **写15秒时间轴**：每2-3秒一个信息点；角色动作、视线、台词同时写。
 7. **加模型护栏**：画幅、参考身份、禁止项、镜头运动限制、台词归属。
-8. **QA自检**：检查是否有字幕/UI/logo/end card、是否玩手机、是否离开电脑、是否错误让面试官说话。
+8. **QA自检**：检查是否有字幕/UI/logo/end card、是否玩手机、是否离开电脑、是否错误让面试官说话、主持人是否误入镜、赢家是否离镜头太远、FinalRound reveal 是否太早或太广告。
 
 写完整prompt前，如果用户还在讨论方向，先输出这个短格式：
 
 ```
+POV：一句英文短句，锁定视频主旨
 产品面：Live Interview Copilot / Desktop Stealth App
 ICP心理：一句话说明这条视频打中的求职者心态
+社会关系：谁在赢、谁不服、谁在追问、谁掌握秘密
+镜头所有权：谁在镜头内，谁只能画外音，谁不能拿麦或抢主持
+空间站位：前排/后排/近景/背后/移动方向
 风格模块：从FinalRound风格模块库选择1个，如 MrBeast Challenge / Kardashian Confessional / AI Fruit Short Drama
 喜剧模式：从FinalRound喜剧模式库选择1-2个
 视觉模板：从FinalRound视觉模板库选择1个
 3秒hook：第一句台词或第一个画面
-转折：第几秒从普通求职痛点转成FinalRound edge
+FinalRound reveal：第几秒、由谁说、为什么不是硬广
 禁止项：无字幕、无水印、无可读UI、无logo、无end card
 ```
 
@@ -318,6 +380,8 @@ ICP心理：一句话说明这条视频打中的求职者心态
 输出前逐项检查：
 - 是否是9:16竖屏15秒？
 - 前3秒是否有脸和冲突？
+- 是否先锁定一句英文 POV？
+- 是否写清社会关系、镜头所有权、空间站位和 reveal 机制？
 - 是否默认聚焦 Live Interview Copilot / Desktop Stealth App，而不是把外围工具当主卖点？
 - FinalRound是否被写成真实面试中的Copilot，而不是mock interview？
 - 是否选择了明确产品面，而不是泛泛说"AI工具"？
@@ -329,6 +393,8 @@ ICP心理：一句话说明这条视频打中的求职者心态
 - 是否没有end card？
 - 是否没有字幕、水印、可读UI、FinalRound logo、产品界面？
 - 是否没有承诺guaranteed hired/guaranteed offer？
+- 如果有画外音主持人/记者，是否保证主持人不出镜、不拿麦、不把台词错分给受访者？
+- 如果有真实人物或新闻梗，是否明确 parody / skit 边界，避免真实背书或新闻 footage 质感？
 - 面试官是否保持沉默？
 - 多角色是否没有同框、没有分屏、没有反射同框？
 - 正反打是否有明确左右脸和视线方向？
