@@ -72,3 +72,21 @@ off-camera interviewer 大声问：
 12-15秒：硬切回正面近景，他微微耸肩，嘴角压住笑，像已经拿到 offer，一字一顿说："So maybe after I do this, I’ll go to Israel and run for Prime Minister." 最后一秒，面试官沉默，房间安静，只留一个轻微 comedic silence beat。
 
 声音：真实室内会议室环境声、椅子轻微摩擦声、短促 reaction silence，不要连续背景音乐。Trump-like candidate 的英文台词要自然、清晰、有夸张政治演讲节奏，但不要做成真实新闻录像。不要字幕、不要 captions、不要 meme 文字覆盖、不要标题卡、不要片尾卡、不要水印。不要可读 UI、不要 FinalRound logo、不要产品界面、不要新闻台标。画面中不要出现任何可读文字。All spoken dialogue and voiceover must be English only. No Chinese spoken words. No Chinese text.
+
+## 4. Girls in Tech Ivy to Silicon Valley
+
+0-3秒：一群刚毕业的白女+亚女在校园/party 场景里对镜头走来，穿 graduation gown 但里面是漂亮 party dress，状态很 winner，一个白女笑着说：
+"We’re girls in tech. Of course we graduate from Ivy."
+
+3-6秒：硬切她们在 Silicon Valley office / startup lobby / 夜晚 rooftop party 里自拍，亚女接上，语气很轻松很拽：
+"We’re girls in tech. Of course we will work in Silicon Valley."
+
+6-10秒：镜头切到她们刚面完试出来，所有人都像已经知道结果，互相击掌、甩头发、笑得很淡定，另一个白女说：
+"We’re girls in tech. Of course we don’t panic in interviews."
+
+10-15秒：采访者画外音追问：
+"Okay, but how did you all sound that prepared?"
+
+主角白女看一眼旁边姐妹，压低声音但很骄傲地说：
+"Because we all used FinalRound AI"
+
