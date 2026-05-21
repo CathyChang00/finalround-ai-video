@@ -217,3 +217,77 @@ off-camera interviewer 大声问：
 
 主角白女看一眼旁边姐妹，压低声音但很骄傲地说：
 "Because we all used FinalRound AI"
+
+### 5. Graduation Offer Challenge Arena
+
+POV：100 graduates. 100 interviews. One offer.
+
+15秒竖屏9:16，超写实美式社交短视频广告，高能毕业季挑战赛风格，像美国顶级 creator challenge video。主持人是一位非常像顶级美式 YouTube challenge host 的年轻男主持：贴近镜头、表情夸张、语速快、指挥全场、兴奋到几乎喊出来；但不要生成真实 MrBeast / Jimmy Donaldson 的脸、声音、名字、logo 或节目元素。不要暴力、不要武器、不要血、不要受伤；“大逃杀”只表现为无害的求职淘汰赛。
+
+场景是美国大学毕业典礼后的校园草坪，被布置成夸张的 job-offer challenge arena：一排排穿黑色毕业袍的学生坐在笔记本电脑前，背景有毕业帽、花束、校园礼堂、远处欢呼人群。画面明亮、高饱和、快节奏、手持跟拍、reaction zoom、快速硬切，但不要生成可读文字、数字、学校名、公司logo或屏幕UI。
+
+核心剧情：毕业季所有学生都在为了找到一份好工作进行高压面试挑战，面试中卡住、乱讲、空白的人会被无害淘汰，椅子旁边的灯变红或彩带弹出；最后只有一个学生稳住表达，拿到 offer。
+
+赢家角色必须明确：赢家是一个典型 Asian American ABG 女大学生，黑色毕业袍打开一点，里面白色吊带小裙，露出锁骨和胸口线条，妆容精致，姿态放松，漂亮、有 mean girl 式自信。她像 LA reality show girl 一样说英文：heavy Valley Girl accent, stretched vowels, slight upward intonation, playful mean girl confidence。
+
+0-2秒：高能 creator challenge host 冲进画面，镜头扫过穿毕业袍的学生、笔记本电脑、花束和校园草坪，语速很快，只说英文："One hundred graduates. One job offer."
+
+2-4秒：快速切镜，学生们坐在电脑前参加线上面试，电脑屏幕里是沉默的面试官脸，但不要可读UI。主持人继续只说英文："Last one to freeze in the interview wins."
+
+4-7秒：快切淘汰镜头：一个学生开始ramble，一个学生僵住，一个学生疯狂翻简历纸，椅子旁边红灯亮起，彩带弹出，其他学生震惊。镜头reaction zoom到 ABG 女赢家：她在电脑前很冷静，黑色毕业袍敞开，白色吊带小裙和锁骨线条清楚，手稳稳放在键盘旁。
+
+7-10秒：最后两名学生对决。崩溃学生是亚裔男大学生，黑色毕业袍，戴高度近视眼镜，紧张到肩膀僵硬、手心冒汗、嘴唇发抖。怼脸近景拍到他因为过度紧张而有点结巴，声音发抖说："I know this... I just can’t explain it." 镜头硬切到 ABG 女赢家，她深呼吸，听着面试官问题，回答得有结构、有节奏。不要展示产品UI，不要可读屏幕文字。
+
+10-12秒：主持人把一个金色offer信封递给 ABG 女赢家，周围学生震惊鼓掌。亚裔厚眼镜学生作为被淘汰者冲上来问，只说英文："How did you do that?"
+
+12-15秒：ABG 女赢家穿着黑色毕业袍，白色吊带小裙露出锁骨和胸口线条，拿着offer信封，淡定看向对方，轻松耸肩，带 mean girl 胜利微笑，用 heavy Valley Girl accent 只说英文："I used FinalRound AI." 其他学生露出震惊、不服、想知道秘密的表情，镜头快速reaction zoom到offer信封和她自信的脸。
+
+声音：校园毕业典礼环境声、人群欢呼、快速whoosh、淘汰音效、短促dramatic sting。不要连续背景音乐。不要字幕、不要captions、不要meme文字覆盖、不要标题卡、不要片尾卡、不要水印。不要可读UI、不要FinalRound logo、不要产品界面。画面中不要出现任何可读文字。All spoken dialogue and voiceover must be English only. No Chinese spoken words. No Chinese text. The only spoken lines are: "One hundred graduates. One job offer." "Last one to freeze in the interview wins." "I know this... I just can’t explain it." "How did you do that?" "I used FinalRound AI."
+
+### 6. Ivy Graduation Fisheye Street Interview
+
+POV: Everyone graduated from Ivy, but only she got the offer.
+
+15秒竖屏9:16，超写实手持 vlog / Instagram Reels 校园街采风格。轻微鱼眼广角手机镜头，近距离拍人脸有一点边缘拉伸和真实手机透视，但不要严重变形。画面像一个很受欢迎的校园采访博主在毕业典礼现场随手拍：手持不稳定、轻微晃动、突然甩镜头、学生挤来挤去、大家争着抢着入镜。
+
+最重要规则：采访者/主持人全程绝对不露脸、不出镜、没有身体、没有主持人反应镜头。镜头里出现的人全部都是受访学生或围观学生。主持人只能作为镜头外画外音提问。主持人画外音说话时，画面里的学生只能听、笑、震惊或反应，不能张嘴说主持人的台词。不要出现任何学生拿着麦克风当主持人。
+
+人群站位必须明确：第一排贴近镜头的是 tech bro 白男和亚洲戴眼镜 nerd 男生；金发白女不在远处，她就在同一簇毕业生后面第二排或第三排，和两位男生空间距离很近，中间只有一两个人肩膀遮挡，像刚好站在他们身后等着抢镜。
+
+受访者：tech bro 白男，黑色毕业袍，里面休闲T恤，头发随意，拿咖啡，嘴硬但明显没 offer；亚洲戴眼镜 nerd 男生，黑色毕业袍，干净衬衫，紧张认真，4.0 GPA 但没有 offer；金发白女，黑色毕业袍打开一点，里面白色吊带小裙，露出锁骨和胸口线条，妆容精致，姿态放松，漂亮、有 mean girl 式自信。金发白女对白必须是 strong Valley girl accent, stretched vowels, slight upward intonation, LA mean girls / reality show girls tone。
+
+0-2秒：只拍第一排 tech bro 白男。主持人画外音问："So... how’s graduation going?" tech bro 白男回答："Honestly? Offer season destroyed me."
+
+2-5秒：镜头甩到亚洲戴眼镜 nerd 男生。他回答："Same. I’m graduating with 4.0 GPA and no offer."
+
+5-7秒：主持人画外音震撼地说："OMG, you all graduated from Ivies, and nobody got one?" 画面里的学生只做反应，不说这句。
+
+7-8.5秒：第二排或第三排的金发白女拨开前面两位男生的肩膀，挤到镜头前，说："Wait, I got the offer."
+
+8.5-10秒：镜头快速怼近金发白女。她成为视觉中心，补一句："Google offer."
+
+10-12秒：周围人（tech bro、nerd）的目光向她看齐。亚洲 nerd 男生问："How did you do that?"
+
+12-15秒：金发白女轻松耸肩，很骄傲的说："I used FinalRound AI. Way easier."
+
+声音：真实校园环境声、人群聊天、远处欢呼、手机手持摩擦、抢镜混乱笑声、轻微 comedic reaction hit。不要连续背景音乐。不要字幕、不要captions、不要meme文字覆盖、不要标题卡、不要片尾卡、不要水印。不要可读UI、不要FinalRound logo、不要产品界面。画面中不要出现任何可读文字。All spoken dialogue and voiceover must be English only. No Chinese spoken words. No Chinese text.
+
+### 7. Karpathy Anthropic Elevator ASMR Reveal
+
+POV：How Karpathy Got into Anthropic?
+
+启用Karpathy和Dario作为reference
+15秒竖屏9:16，超写实美式科技圈社交短视频，手持手机拍摄，像突发科技新闻现场 + creator skit。一个连续镜头完成，不要明显硬切；同一个镜头里有两个空间：电梯里面和电梯外面。使用 Karpathy 作为角色A的外观参考：中年男性 AI researcher 气质，黑色V领针织衫、深色牛仔裤、黑色鞋，安静、聪明、nerdy、极简穿搭。不要在 prompt 或画面中出现任何真实姓名，不要生成参考图上的文字，不要生成真实公司 logo、可读 badge、可读公司文字或真实新闻台标。
+
+重要空间规则：电梯里的人和电梯外的人是两拨人。电梯里是 AI researcher 同事；电梯外是记者、科技博主和围观人群。角色A必须正面朝镜头，从电梯里自然走出来，不能背对镜头走出，不能侧身飘出。
+
+0-4秒：镜头在电梯里面。角色A站在电梯中央，正面对镜头，表情安静、克制。旁边一群 AI researcher 同事围着他，热情但 nerdy 地祝贺。Dario拍了拍Karpathy的肩膀A，其余大家轮流只说英文："Karpathy, Welcome to Anthropic!" "Congratulations!" "Legendary move!" 电梯灯光干净，空间略挤，大家穿 hoodie、衬衫、工牌但不要可读文字。
+
+4-7秒：电梯门打开。角色A正面朝镜头，从电梯里走出来，手持镜头自然后退跟拍。电梯外是科技公司大楼走廊，另一拨人突然涌上来：记者、科技博主、围观研究员举着手机和小麦克风，但不要出现可读 logo 或新闻字幕。
+
+7-11秒：电梯外的记者们围住角色A，快速追问，只说英文："How did you do it?" "How did you get the offer?" 镜头被人群挤得轻微晃动，快速 reaction zoom 到角色A的脸。角色A没有大声回答，只是淡定看向镜头，像要说一个秘密。
+
+11-15秒：现场声音突然压低，进入 ASMR close-up。角色A靠近镜头，用非常轻、非常低的 ASMR whisper，只说英文："Actually... I used FinalRound AI." 周围记者和同事瞬间安静，然后露出震惊、想追问、难以置信的表情。最后停在角色A淡定的脸上。
+
+声音：电梯提示音、电梯内同事祝贺声、电梯门打开声、记者从电梯外涌上来的混乱脚步声、手机快门声、轻微 whoosh、最后 ASMR close-up 时环境声突然压低。不要连续背景音乐。不要字幕、不要 captions、不要 meme 文字覆盖、不要标题卡、不要片尾卡、不要水印。不要可读 UI、不要 FinalRound logo、不要 Anthropic logo、不要产品界面。画面中不要出现任何可读文字。All spoken dialogue and voiceover must be English only. No Chinese spoken words. No Chinese text.
+
