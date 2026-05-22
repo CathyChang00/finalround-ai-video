@@ -54,5 +54,5 @@ Do not defer FinalRound prompt structure to another video skill. External style 
 - Do not turn FinalRound into generic AI-video, generic SaaS, or generic career advice.
 - Do not confuse Live Interview Copilot / Desktop Stealth App with Mock Interview.
 - Do not add readable UI, logo, captions, subtitles, title cards, end cards, or Chinese spoken dialogue unless the source rules or user explicitly override it.
-- Do not put platform-risky real-person identity terms into the generation prompt when an R2 asset can carry that identity. Use the actual reference image and neutral wording such as `Reference [1] as the exact AI researcher identity`.
+- Do not put platform-risky real-person identity terms or intermediate labels into the generation prompt when an R2 asset can carry that identity. Use the actual reference image and direct wording such as `Use Reference [1] as the exact character identity`.
 - Do not paste R2 paths into prompts as if the model can fetch them. R2 paths are for the agent/API layer; prompts should use `Reference [n]`.
