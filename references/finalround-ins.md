@@ -93,17 +93,15 @@ FinalRound-INS 固定规则：
 
 ## R2 资产联动规则
 
-FinalRound-INS 以后默认和 R2 角色资产联动。用户只要说“R2 里有这个角色”“用 Dario / Karpathy / Zuckerberg / Peter Thiel / Truman / Jessica 这类资产”“用某个 reference 角色”，就先读取 `references/r2-character-assets.md`，再用 `rclone lsf r2:creative-assets/chars/<asset-slug> --recursive` 复查最新版本。
+FinalRound-INS 以后默认和 R2 `chars/` 角色资产联动。用户只要说“R2 里有这个角色”“用 Dario / Karpathy / Zuckerberg / Peter Thiel / Truman / Jessica 这类资产”“用某个 reference 角色”，就先读取 `references/r2-character-assets.md`，再用 `rclone lsf r2:creative-assets/chars/<asset-slug> --recursive` 复查具体图片路径。
 
 生成时必须优先把 R2 图片作为真实 reference 传给模型，而不是靠 prompt 文字描述真人或敏感身份。R2 key 属于 agent/API 层，prompt 本体里只写 `Reference [1]`、`Reference [2]`。不要把 R2 path 直接粘进 prompt。
-
-默认版本规则：同一角色有多个日期版本时，优先使用最新日期，例如 `20260521/frames/v01.png` 优先于 `20260520/frames/v01.png`。如果用户指定某个版本或风格，例如 ceremonial / papal / cofounders，再按用户指定切换。
 
 如果 R2 中已经有对应人物资产，prompt 里不要写平台容易误判的真实身份词。写成：`Use Reference [1] as the exact AI researcher identity. Preserve his face, hair, outfit, posture, and calm intellectual energy. Do not mention the real person's name in dialogue, visible text, UI, badge, logo, or title card.`
 
 对于真实人物 parody、科技新闻人物、公司 CEO、founder、researcher、政治人物，优先用 R2 reference 承载长相，prompt 只写 generic role label：`AI researcher`、`tech CEO`、`founder archetype`、`game doll`、`job candidate`。这样可以减少可灵、Seedance、Sora、Veo 等平台在提示词层面的禁忌风险。
 
-当前已确认的 `chars/` 资产包括 Dario 相关三套：`dario-amodei`、`dario-papal`、`anthropic-cofounders`；以及 `andrej-karpathy`、`mark-zuckerberg`、`peter-thiel`、`squid-game-meta-doll`、`truman`、`sam-altman`、`elon-musk`、`jensen-huang`、`sundar-pichai`、`mira-murati`、`yann-lecun`、`jessica-canonical` 等。完整索引看 `references/r2-character-assets.md`，生成前以 R2 复查结果为准。
+当前已确认的 `chars/` 资产包括 Dario 相关三套：`dario-amodei`、`dario-papal`、`anthropic-cofounders`；以及 `andrej-karpathy`、`mark-zuckerberg`、`peter-thiel`、`squid-game-meta-doll`、`truman`、`sam-altman`、`elon-musk`、`jensen-huang`、`sundar-pichai`、`mira-murati`、`yann-lecun`、`jessica-canonical` 等。完整 slug 索引看 `references/r2-character-assets.md`，生成前以 R2 复查结果为准。
 
 
 ### 社媒夸张人设 shorthand
@@ -340,7 +338,7 @@ All spoken dialogue and voiceover must be English only. No Chinese spoken words.
 1. **提取参考梗**：确认它的核心不是表面画面，而是剪辑结构、情绪关系和hook机制。
 2. **确认产品面**：默认使用 Live Interview Copilot / Desktop Stealth App；只有用户明确指定时才切到 Mock Interview、Resume Builder、AI Job Hunter / Auto Apply 或 full stack。
 3. **判断转化状态**：如果是纯新闻讽刺或纯 IP 仿写，先标成“待转化”；只有当剧情已经接到面试、offer、job market、candidate survival 或明确 FinalRound reveal 时，才写成完整 FinalRound-INS。
-4. **解析 R2 资产**：如果涉及 R2 角色或真实人物 reference，先用 `references/r2-character-assets.md` 和 `rclone lsf` 确认 asset slug / 最新版本；生成时通过 presigned URL 传入 reference image，prompt 里只写 `Reference [n]`。
+4. **解析 R2 资产**：如果涉及 R2 角色或真实人物 reference，先用 `references/r2-character-assets.md` 和 `rclone lsf` 确认 asset slug / 具体图片路径；生成时通过 presigned URL 传入 reference image，prompt 里只写 `Reference [n]`。
 5. **校准产品理解**：把卖点写成真实面试场景里的具体edge，不要把Interview Copilot写成mock interview，也不要让外围工具抢主线。
 6. **选择内容bucket、心理hook、风格模块、喜剧模式和视觉模板**：默认先选娱乐化skit/POV/meme；再选求职者心态、FinalRound风格模块、喜剧模式和视觉模板。
 7. **写Concept/Hook/笑点结构**：用1段concept + 1句first-3s hook + 1句转折说明，不先写长prompt。
@@ -355,7 +353,7 @@ All spoken dialogue and voiceover must be English only. No Chinese spoken words.
 POV：一句英文短句，锁定视频主旨
 产品面：Live Interview Copilot / Desktop Stealth App
 产品接入状态：已接 FinalRound / 未接产品待转化
-R2资产：需要 / 不需要；如需要，写 asset slug、版本、Reference [n] 对应关系
+R2资产：需要 / 不需要；如需要，写 asset slug、Reference [n] 对应关系
 ICP心理：一句话说明这条视频打中的求职者心态
 社会关系：谁在赢、谁不服、谁在追问、谁掌握秘密
 镜头所有权：谁在镜头内，谁只能画外音，谁不能拿麦或抢主持
@@ -464,7 +462,7 @@ FinalRound reveal：第几秒、由谁说、为什么不是硬广
 - 是否先锁定一句英文 POV？
 - 如果用户给的是新闻内容，POV 是否严格基于新闻事实，而不是另起一个泛求职故事？
 - POV 是否默认一行、最多两行，没有长因果解释？
-- 如果用户提到 R2 资产或已存角色，是否查过 `references/r2-character-assets.md` 并复查 R2 最新路径？
+- 如果用户提到 R2 资产或已存角色，是否查过 `references/r2-character-assets.md` 并复查 R2 具体图片路径？
 - 生成时是否把 R2 图片作为真实 reference 传入，而不是只在 prompt 里用文字描述人物？
 - prompt 里是否只写 `Reference [n]` 和中性角色身份，避免直接写平台敏感真人/公司身份？
 - 是否写清社会关系、镜头所有权、空间站位和 reveal 机制？
