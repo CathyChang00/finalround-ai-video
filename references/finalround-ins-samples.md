@@ -289,3 +289,184 @@ POV：How Karpathy Got into Anthropic?
 
 声音：电梯提示音、电梯内同事祝贺声、电梯门打开声、记者从电梯外涌上来的混乱脚步声、手机快门声、轻微 whoosh、最后 ASMR close-up 时环境声突然压低。不要连续背景音乐。不要字幕、不要 captions、不要 meme 文字覆盖、不要标题卡、不要片尾卡、不要水印。不要可读 UI、不要 FinalRound logo、不要 Anthropic logo、不要产品界面。画面中不要出现任何可读文字。All spoken dialogue and voiceover must be English only. No Chinese spoken words. No Chinese text.
 
+## 11. Hidden Camera Self-Intro Product Placement
+
+POV: The Truman Show, but "tell me about yourself" turns into product placement.
+
+收录日期：2026-05-22
+
+一句话概括：线上面试问到 "tell me about yourself" 时，候选人突然变成郊区广告植入式表演，丈夫发现她偏离真实面试后用 FinalRound AI 把回答拉回具体经历。
+
+使用场景：behavioral interview / self-introduction / tell me about yourself / 线上面试开场。
+
+核心卖点：FinalRound AI 帮候选人把空泛、模板化、自我包装式表达，改成具体、自然、和岗位匹配的真实回答。
+
+喜剧结构：经典隐藏摄像机式郊区家庭错位感 + 妻子广告植入式自我介绍 + 丈夫发现不对劲 + 产品一句话纠偏。
+
+画面风格：15 秒竖屏 9:16，写实社交短剧广告，粉彩郊区厨房，硬切，近景反应，轻微手持不安感。
+
+角色关系：妻子是面试者但失控成广告主持人，丈夫是旁观者和现实校准者，模糊面试官只作为电脑里的压力来源。
+
+可复用标签：FinalRound INS, Live Interview Copilot, behavioral interview, self intro, hidden camera parody, suburban kitchen, product placement joke, two-reference casting, no readable UI, no captions.
+
+可复用骨架：候选人被问一个常见面试题，突然讲出空泛 corporate buzzwords；旁边人意识到这不是正常回答；用一句短台词引出 FinalRound AI；最后候选人给出更具体、更像真人的回答。
+
+15秒竖屏9:16，写实社交短剧广告，讽刺致敬一种“完美郊区家庭 + 隐藏摄像机 + 妻子突然广告植入 + 丈夫意识到世界不对劲”的经典桥段。视频画面和对白里不要出现电影名、角色名、演员名、logo 或任何原片引用。
+
+使用 Reference [1] 作为丈夫的准确人物参考。保留他的脸、发型、穿搭、体型、眼神反应和“逐渐意识到不对劲”的状态。
+使用 Reference [2] 作为妻子的准确人物参考。保留她的金发、脸、白色上衣、精致郊区主妇气质、僵硬微笑和广告植入式表演。
+不要把两个人换成普通演员。
+
+场景：过于完美的粉彩色郊区厨房，温暖但有点人工的家庭灯光，厨房岛台上有一台笔记本电脑、咖啡杯、水果碗、干净橱柜。妻子正在参加真实线上面试。电脑里只能看到模糊的面试官脸，不要可读 UI。她本来应该回答 “tell me about yourself”，但突然像在对隐藏摄像机做广告植入一样介绍自己。丈夫站在旁边，慢慢意识到她不是真的在正常面试。
+
+0-3秒：妻子坐在电脑前，笑容过亮，手里拿着咖啡杯，像广告主持人一样开口。她说："Hi, I’m a highly motivated professional with a passion for synergy."
+3-6秒：妻子微微转身，不再看电脑，而是看向房间里某个不存在的隐藏摄像机，做出僵硬的产品广告手势。她说："I bring leadership, communication, and cross-functional value to every team."
+6-9秒：丈夫僵住。他先看妻子，再看电脑，最后扫视厨房，像发现隐藏摄像机一样。他说："Wait... who are you talking to?"
+9-12秒：妻子还保持假笑，试图继续说下去。丈夫打断她，语气又荒唐又警觉，说："Ma'am, this is not a self-intro. Use FinalRound AI."
+12-15秒：妻子重新看向电脑，放下广告腔，变得自然、具体、像真人在回答面试。她说："I led two product launches, and this role matches the work I already do well."
+
+镜头：快节奏社交短视频，硬切，近景反应镜头，轻微手持不安感。0-6秒妻子掌控画面，像一段突兀的广告植入；6-12秒丈夫通过反应近景掌控画面；12-15秒妻子和电脑同框，表现她终于回到真实面试。
+
+声音：郊区厨房环境声、电脑会议轻微底噪、3-6秒有一个很短的假广告 jingle sting、丈夫意识到不对劲时有一个短促 record scratch，不要连续背景音乐。
+
+不要字幕、不要 captions、不要 meme 文字、不要标题卡、不要片尾卡、不要水印、不要产品 UI、不要可读屏幕文字、不要真实 logo。所有角色对白必须是英文。不要中文口播。不要中文文字。
+
+## 12. AI Job Market Dome Escape
+
+POV: The Truman Show, but the dome is the AI job market.
+
+收录日期：2026-05-22
+
+一句话概括：AI CEO 像控制室导演一样操控就业市场，准备用 AI 工具消灭岗位，但求职者在人工天空出口前用 FinalRound AI 完成反抗并拿到 offer。
+
+使用场景：AI job market / job listing disappearing / offer reveal / 求职者对抗系统性不确定性。
+
+核心卖点：FinalRound AI 被塑造成求职者在 AI 重塑白领就业市场时的反制工具，让候选人从被系统操控的人变成能拿到 offer 的人。
+
+喜剧结构：控制室反派宣布就业市场规则 + AI 工具消灭岗位 + 求职者拒绝被淘汰 + FinalRound AI 作为反抗信号 + offer 反转。
+
+画面风格：15 秒竖屏 9:16，写实讽刺短剧广告，冷蓝控制室与明亮人工天空出口强对比，硬切，压迫感近景，最后权力反转。
+
+角色关系：AI CEO 是系统控制者和导演，求职者是发现世界不真实但拒绝认输的主角，工作人员剪影负责放大控制室失控感。
+
+可复用标签：FinalRound INS, AI job market, offer reveal, control room, dome escape, job listing eliminated, system rebellion, two-reference casting, no readable UI, no captions.
+
+可复用骨架：高处控制者宣布一个求职者即将被系统淘汰；AI 或市场变化进一步压缩机会；求职者在边界空间拒绝认输并说出 FinalRound AI；模糊 offer 出现；控制者失控，求职者离开系统。
+
+【2. 中文 Prompt】
+
+15秒竖屏9:16，写实讽刺短剧广告，致敬《楚门的世界》结局的结构：控制室里的导演俯视主角，主角站在人工天空出口前，最后选择反抗。视频画面里不要出现电影名、真实人名、真实公司logo、新闻台标或可读文字。
+
+使用 Reference [1] 作为控制室 AI CEO 的准确人物参考。保留他的脸、发型、眼镜、耳麦、深色高领、帽子、冷静但压迫的导演气质。背景是高科技控制室，蓝色屏幕光、监控墙、工作人员剪影、冷色调。
+使用 Reference [2] 作为求职者主角的准确人物参考。保留他的脸、发型、穿搭、困惑但倔强的眼神，以及“发现世界是假的但不认输”的状态。
+不要把两个人换成普通演员。
+
+0-3秒：控制室近景。AI CEO 坐在监控墙前，看着屏幕里的求职者，表情平静、像导演一样掌控全局。他说："He's about to get an entry-level white-collar job."
+3-7秒：镜头切到监控屏反光和工作人员紧张操作。AI CEO 继续看着屏幕，语气更冷，说："Release the Claude plugin. Eliminates the job listing."
+7-10秒：硬切到求职者。他站在一个巨大的人工天空出口前，抬头看向虚假的蓝天和门缝，再低头看电脑。灯光从出口边缘打在他脸上。他倔强地说："No. I have FinalRound AI."
+10-12秒：求职者电脑弹出模糊 offer 邮件布局，不要可读文字。控制室瞬间混乱，工作人员回头，AI CEO 第一次失控，表情从冷静变成震惊。
+12-15秒：求职者抬头看向人工天空出口，微笑，像真正准备离开这个系统。他说："Good afternoon, good evening, and good night."
+
+镜头：强对比硬切。控制室用冷蓝色近景、监控屏反光、压迫感构图；求职者场景用更明亮的人工天空、出口边缘光、轻微仰拍。不要一镜到底，重点是“控制室掌控”到“求职者反抗”的权力反转。
+
+声音：控制室低频机器声、键盘声、警报前的压抑静音；offer 出现时有短促 notification pop；AI CEO 失控时控制室出现混乱人声；最后一句后留半秒安静。不要连续背景音乐。
+
+不要字幕、不要 captions、不要 meme 文字、不要标题卡、不要片尾卡、不要水印、不要产品 UI、不要可读屏幕文字、不要真实公司 logo。所有角色对白必须是英文。不要中文口播。不要中文文字。
+
+## 13. Palantir-Style Invisible Filter Auditorium
+
+POV: How to Get Palantir Offer?
+
+收录日期：2026-05-22
+
+一句话概括：Palantir-style AI fellowship 招聘会被拍成 1984 式集会，telescreen 上的 tech billionaire founder 用第四面墙反转告诉候选人，FinalRound AI 才是聪明人通过面试的 invisible filter。
+
+使用场景：Palantir-style offer / AI fellowship / neurodivergent AI talent / hard interview / tech recruiting parody。
+
+核心卖点：FinalRound AI 被包装成高智商候选人面对高门槛面试时默认会用的隐藏规则，而不是普通面试工具介绍。
+
+喜剧结构：威权式招聘宣言 + 聪明候选人承认面试太难 + founder 突然穿破第四面墙 + 冷静说出 FinalRound AI + 全场理解 hidden rule。
+
+画面风格：15 秒竖屏 9:16，satirical tech news parody skit，desaturated gray，cold lighting，authoritarian auditorium，telescreen 电流感，35mm grain，surveillance aesthetic。
+
+角色关系：telescreen 里的 founder 是权力系统本身，台下 applicants 是想加入但怕过不了面试的聪明候选人，young applicant 代表高意愿但高压力的求职者。
+
+可复用标签：FinalRound INS, Palantir-style recruiting, AI fellowship, neurodivergent talent, 1984 auditorium, Big Brother parody, fourth wall reveal, invisible filter, no readable text, no captions.
+
+可复用骨架：权力型招聘场景先给出宏大招募口号；台下候选人提出真实面试压力；权力角色不解释岗位，而是直接点破隐藏规则；FinalRound AI 作为只有聪明人知道的通关方式出现；群体反应完成笑点。
+
+15秒竖屏9:16，satirical tech news parody skit
+
+场景：一个像《1984》老大哥集会一样的荒诞 tech recruiting auditorium。巨大灰色会议厅，冷白灯，监控摄像头，高墙上有一个巨大的 telescreen。屏幕里是 Peter Thiel-like tech billionaire founder archetype：中年白人男性，冷静、瘦削、硅谷权力感，黑色西装，表情克制，像 Big Brother 一样俯视台下。不要生成真实人物姓名文字，不要生成真实公司 logo。
+
+社会关系：台上的 founder 像权力系统本身，台下是想进入 Palantir-style AI fellowship 的 neurodivergent / AI talent applicants。观众不是反抗者，是很想加入但怕过不了 interview 的聪明候选人。FinalRound AI 的 reveal 是第四面墙反转，不是普通广告介绍。
+
+0-3秒：固定低角度广角镜头，台下黑压压一片 applicants 坐在 auditorium 里，抬头看巨大 telescreen。Peter Thiel-like founder 的脸占满屏幕，像 1984 Big Brother。声音低沉、平静、压迫感强，他说：
+"Palantir embraces the neurodivergent. Join us."
+
+3-6秒：硬切台下近景，一个紧张但聪明的 young AI applicant 坐在人群中，戴眼镜，手里抱着笔记本，明显很想加入但压力巨大。他抬头看屏幕，小声但崩溃地说：
+"Okay... but it’s so hard. I can’t even pass the interview."
+
+6-9秒：镜头快速切回巨大 telescreen。Peter Thiel-like founder 没有正常回答，而是突然停止演讲，眼睛直接看进镜头，像穿破第四面墙。整个 auditorium 安静下来，只有电流声和轻微监控摄像头转动声。
+
+9-12秒：telescreen 近景，他身体微微前倾，表情像在说一个只有聪明人知道的规则，用冷静、压迫、荒诞的语气说：
+"Smart people use FinalRound AI."
+
+12-15秒：硬切回台下，所有 applicants 一秒安静，然后像突然听懂 hidden rule 一样点头。那个 young applicant 低头看自己的笔记本，表情从慌乱变成“原来如此”。telescreen 里的 founder 最后补一句：
+"That was the invisible filter."
+
+最后一秒，台下全体 applicants 同时抬头看向屏幕，房间进入短促 comedic silence beat。
+
+声音：压抑 auditorium 环境声、老式 telescreen 电流声、监控摄像头轻微机械转动声、人群紧张呼吸声、最后一秒 comedic silence。不要连续背景音乐。画面质感是 dystopian tech recruiting parody：desaturated gray, cold lighting, authoritarian architecture, 35mm grain, surveillance aesthetic。不要拍成真实新闻、真实公司发布会或真实广告。
+
+不要字幕、不要 captions、不要 meme 文字覆盖、不要标题卡、不要片尾卡、不要水印。不要可读 UI、不要 FinalRound logo、不要 Palantir logo、不要产品界面、不要新闻台标。画面中不要出现任何可读文字。All spoken dialogue and voiceover must be English only. No Chinese spoken words. No Chinese text.
+
+The only spoken lines are:
+"Palantir embraces the neurodivergent. Join us."
+"Okay... but it’s so hard. I can’t even pass the interview."
+"Smart people use FinalRound AI."
+"That was the invisible filter."
+
+## 14. Meta Job Cuts Red Light Arena
+
+POV: Meta begins 8,000 global job cuts
+
+收录日期：2026-05-22
+
+一句话概括：Meta 裁员新闻被拍成荒诞 tech game arena，员工在 AI 加速和岗位优化规则下连查看 layoff email 都会被判定为 movement。
+
+使用场景：tech layoff news / Meta job cuts / AI-driven role optimization / workplace anxiety / 红灯绿灯式裁员讽刺。
+
+核心卖点：当前版本没有 FinalRound AI 产品露出，主要是科技裁员新闻讽刺；如果后续转成 FinalRound INS，可把产品 reveal 接在“员工不能看 layoff email / 面试逃生路径 / 被优化后的下一份 offer”上。
+
+产品接入状态：未接 FinalRound AI，属于待转化的 tech news satire prompt。
+
+喜剧结构：木头人用企业口号发号施令 + 员工在荒诞规则下被淘汰 + “查看裁员邮件也算 movement”形成黑色笑点 + 最后用企业感谢话术收尾。
+
+画面风格：15 秒竖屏 9:16，荒诞 tech game arena，绿色操场，Meta 蓝色工牌和绿色运动服，巨大 Zuckerberg-like 木头人娃娃，冷冰冰系统提示，红光扫描，狙击枪声，群体僵住。
+
+角色关系：木头人是公司规则和 AI 加速压力的拟人化系统，员工是被优化和裁员新闻支配的玩家，全片只有木头人说话，员工只能用僵住、颤抖、倒下来表达恐惧。
+
+可复用标签：tech layoff satire, Meta job cuts, AI acceleration, role optimization, red light green light, game arena, workplace anxiety, system text, no dialogue except doll, no captions.
+
+可复用骨架：企业把员工放进游戏化淘汰场；领导/系统用积极口号包装压力；某个普通动作被判违规；员工倒下；最后一句企业感谢话术制造反讽。
+
+一个荒诞的 tech game arena。远处是一个巨大扎克伯格脸的木头人娃娃。场上几十个玩家全部穿 Meta 蓝色工牌和绿色运动服，不说话，只能僵住、颤抖、倒下；全片只有木头人说话。
+
+广角，绿色操场上几百个 Meta 员工往前小跑。木头人背对镜头，机械童声开始唱。
+
+木头人：“Green light. Build AI faster.”
+
+“绿灯。把 AI 做快一点。”
+
+木头人突然转头，眼睛红光扫描全场，扫描线扫过每个人的工牌，画面弹出冷冰冰的系统字样：“ROLE OPTIMIZATION DETECTED”。几个员工只是手抖了一下，就被远处狙击枪击中倒下。
+
+特写一个员工站得一动不动，只是眼睛看向手机通知：“Meta begins 8,000 global job cuts.” 木头人眼睛立刻锁定他，枪声响，他倒下，手机滑到地上。
+
+木头人：“Red light. Checking your layoff email counts as movement.”
+
+红光锁定那几个人，狙击枪声连续响，几个人一个接一个倒下，其他人僵在原地不敢呼吸，工牌掉在地上，特写上面写着 “Optimized”。
+
+木头人面无表情看着剩下的人，黑屏前补一句。
+
+木头人说：“Thank you for helping us build the future.”
