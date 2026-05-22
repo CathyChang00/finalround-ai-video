@@ -245,7 +245,7 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 - **Creator Challenge Arena**：把面试机会拍成无害挑战赛：极端条件、简单规则、淘汰反馈、最后一个赢家。必须写清参与者、面试任务、淘汰规则、奖励和赢家角色；不要暴力、武器、血或真实 MrBeast/Jimmy Donaldson 元素。
 - **Parent Panic Hard Cut Proof**：先用闹钟/父母/卧室制造家庭压力，再让候选人用一句短产品 reveal 反高潮，最后硬切 offer email 或结果证明。屏幕只能是模糊 offer email 布局，不要真实公司 logo 或可读长文字。
 - **Tech News Elevator / ASMR Reveal**：一个连续手持镜头里有电梯内外两个空间。电梯里是同事祝贺，电梯外是记者/tech blogger 追问；角色必须正面从电梯里走出来，镜头后退跟拍，最后环境声压低进入 ASMR 近景，用一句轻声产品 reveal 收住。
-- **Political / Public Figure Interview Parody**：真实人物参考只能用于 parody reenactment 或 creator skit，不是真实新闻 footage、不是公开声明、不是背书。优先写 `Trump-like candidate`、`角色A` 这类标签；如果用户明确要求真实姓名或 reference，保留用户意图，同时写清 parody、安全边界、无新闻台标、无真实 logo、无可读文字。
+- **Political / Public Figure Interview Parody**：真实人物参考只能用于 parody reenactment 或 creator skit，不是真实新闻 footage、不是公开声明、不是背书。优先写 `角色A`、`political candidate`、`public figure reference` 这类中性标签；如果用户明确要求真实姓名或 reference，保留用户意图，同时写清 parody、安全边界、无新闻台标、无真实 logo、无可读文字。
 - **Suburban Hidden Camera Product Placement**：过于完美的郊区厨房、人工家庭灯光、隐藏摄像机错觉、僵硬微笑和广告手势。候选人回答常见面试题时先说空泛 buzzwords，旁观者通过反应近景发现不对劲，最后把回答拉回真实经历。0-6秒广告植入失控，6-12秒旁观者掌控反应，12-15秒回到电脑面试。
 - **AI Job Market Control Room / Dome Escape**：冷蓝控制室里系统反派俯视求职者，监控墙和工作人员剪影表达权力；求职者站在人工天空、出口、门缝或边界空间前，面对岗位消失或系统淘汰规则，用一句 FinalRound reveal 反抗，最后用模糊 offer 布局或离开系统完成反转。
 - **Dystopian Recruiting Auditorium / Telescreen Reveal**：巨大灰色招聘礼堂、冷白灯、监控摄像头、telescreen、台下聪明但紧张的 applicants。屏幕里的 founder / system role 像权力本身，先发布招募口号，再穿破第四面墙说出 hidden rule。适合 AI fellowship、elite tech recruiting、高门槛面试，不要拍成真实发布会或新闻 footage。
@@ -253,13 +253,13 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 
 ## 真实人物与新闻梗参考
 
-- 如果用户用真实科技人物、CEO、researcher、政治人物或近期新闻做灵感，生成 prompt 默认优先改成 `角色A`、`角色B`、`Trump-like candidate` 这类标签；除非用户明确要求，不在画面或对白里出现真实姓名。
+- 如果用户用真实科技人物、CEO、researcher、政治人物或近期新闻做灵感，生成 prompt 默认优先改成 `角色A`、`角色B`、`public figure reference`、`tech founder reference` 这类中性标签；除非用户明确要求，不在画面或对白里出现真实姓名。
 - 可以使用 reference image 保持外观、穿搭和气质，但要写清不要生成参考图上的文字、真实公司 logo、可读 badge、新闻台标或产品 UI。
 - 如果 R2 里有对应角色资产，必须优先用 R2 reference image 承载人物外观，而不是在 prompt 文字里写真实姓名和敏感身份。prompt 只说 `Use Reference [1] as the exact character identity` 或更具体的中性角色身份。
 - 不要让真实人物听起来像在公开背书 FinalRound。更安全的结构是 parody / creator skit：记者追问、角色低声说一个秘密、周围人震惊。
 - 如果用户明确要求使用真实名字或特定人物 reference，必须保留 parody / skit / reenactment 边界，并避免“真实公开声明”语气。
 - 如果用户借用电影/电视剧经典桥段，prompt 可以描述“致敬某种结构”来帮助模型理解，但必须加清楚：视频画面和对白里不要出现电影名、角色名、演员名、logo 或任何原片引用。
-- 如果用户借用具体公司或新闻标题，默认不要生成真实公司 logo、新闻台标、可读 badge 或可读屏幕文字。公司名可以只作为 POV / 方向参考；画面里优先使用 `Palantir-style`、`Meta-like`、`AI CEO`、`tech billionaire founder archetype`、`Zuckerberg-like doll` 这类 parody 标签。
+- 如果用户借用具体公司或新闻标题，默认不要生成真实公司 logo、新闻台标、可读 badge 或可读屏幕文字。公司名可以只作为 POV / 方向参考；画面里优先使用 `elite AI recruiting company`、`large social platform company`、`AI CEO`、`tech founder archetype`、`oversized game doll` 这类中性 parody 标签。
 - 如果新闻梗还没有 FinalRound reveal，先保留为“待转化素材”，不要擅自补一个硬广结尾；转化时优先从“下一场真实面试”“被系统筛掉前的 offer 机会”“裁员后重新进入 job market”三个路径接入。
 
 ## FinalRound风格模块库
