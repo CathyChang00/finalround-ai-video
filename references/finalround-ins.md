@@ -35,6 +35,9 @@ FinalRound产品场景 × 求职者心理痛点 × 社媒梗结构 × Creator表
 - 可以借用"屏幕叙事"思路：电脑屏幕、视频通话窗口、面试官沉默、输入光标、倒计时都可以成为推动情绪的角色。
 - 可以借用"道具编码权力关系"：电脑屏幕大小、候选人坐姿、面试官表情、咖啡/西装/睡衣/简历纸堆都要表达权力和压力，不要用台词解释。
 - 每秒都要有信息或情绪推进。
+- 如果灵感来自电影、电视剧或强 IP，只提炼结构关系和镜头语法，例如“控制室俯视主角”“隐藏摄像机广告植入”“人工天空出口前反抗”，不要把原片名、角色名、演员名、logo 或可读引用写进画面或对白。
+- 如果灵感来自 tech news 或裁员新闻，先判断它是否已经接到 FinalRound 产品场景。已经接到 offer / interview / job market / candidate survival 的，可以沉淀为 FinalRound-INS；如果只是纯新闻讽刺，标成“待转化”，不要硬说它已经是 FinalRound 广告。
+- 可以把 AI job market、招聘系统、裁员系统写成拟人化控制者，例如控制室导演、telescreen founder、游戏木头人、系统广播，但最终冲突必须落在求职者如何过面试、拿 offer、保住下一次机会。
 
 
 ### 首版质量底线
@@ -45,6 +48,7 @@ FinalRound产品场景 × 求职者心理痛点 × 社媒梗结构 × Creator表
 2. **镜头所有权**：明确镜头属于谁，谁在镜头内，谁只能画外音，谁不能拿麦或抢主持人身份。街采、vlog、记者围堵类 prompt 尤其要先写这一条。
 3. **空间站位**：明确前排/后排、近景/远景、背后/斜后方、角色之间距离和移动方向。不要只写“人群中”或“走近”，否则模型会把关键人物放远、放错方向或让错误的人入镜。
 4. **揭示机制**：明确 FinalRound 如何被发现或说出。FinalRound 露出应是秘密武器、结构优势、标签证据、轻声反转或一句短产品动作，不要写成角色主动讲广告说明。
+5. **转化状态**：如果用户给的是纯新闻讽刺、纯裁员梗或纯 IP 仿写，先标明“未接产品 / 待转化”，再说明可从 interview、offer、job market、layoff 后下一份工作等路径接入 FinalRound。
 
 成型样例反推规则时，只使用 Cathy 已确认跑通的 prompt。用户明确说还没写好的 prompt 先不要拿来抽规则。
 
@@ -62,7 +66,9 @@ FinalRound-INS 固定规则：
 - Interview Copilot 是真实面试中的实时辅助，不是 mock interview，不是单纯预演工具。不要把Mock Interview、Resume Builder、Auto Apply写成默认主卖点。
 - 角色真正进入面试时必须和电脑互动，不要只玩手机。
 - 除非用户明确要求，不要展示 FinalRound logo、产品界面、可读UI、可读屏幕文字；如果用户明确要求展示 logo，优先使用真实 logo 素材后期叠加或明确 reference，不依赖文生视频模型凭空生成 logo。
-- 产品露出优先用一句短台词完成，例如 `"Open FinalRound AI."`、`"I used FinalRound AI."`、`"Because we used FinalRound AI."`、`"Actually... I used FinalRound AI."`。
+- 产品露出优先用一句短台词完成，例如 `"Open FinalRound AI."`、`"I used FinalRound AI."`、`"Because we used FinalRound AI."`、`"Actually... I used FinalRound AI."`、`"No. I have FinalRound AI."`、`"Smart people use FinalRound AI."`
+- 产品 reveal 可以承担不同叙事功能：纠偏一句空泛面试回答、揭示赢家的隐藏规则、打断系统控制者、让角色从广告腔回到真实表达。不要每条都写成普通推荐语。
+- 当剧情是 behavioral self-introduction / "tell me about yourself" 时，FinalRound 的卖点不是让候选人听起来更会包装，而是把空泛 buzzwords 变成具体经历、结果和岗位匹配，例如从 `"passion for synergy"` 转成 `"I led two product launches..."`。
 - 当剧情涉及“别人为什么拿到 offer / 进大厂 / 听起来像已经被录用”时，不要默认偷懒写成 `"Not answers. Structure."`。先根据剧情选择更具体的产品 edge：实时听题、实时转写、给 talking points、给回答框架、帮候选人在 live interview 里稳住表达。`"Not answers. Structure."` 只能在用户明确喜欢这个句式或剧情真的需要极短反差时使用。
 - Entertainment skit 默认先演出社交处境和人物状态，FinalRound AI 的名字或产品揭示通常放在第10秒之后；除非用户明确要产品开场、教程、demo或强卖点，不要在前3秒直接把 FinalRound 塞进 POV 或第一句台词。
 - 如果用户要求强产品露出，优先用后期素材或真实B-roll，不依赖文生视频模型生成可读UI。
@@ -121,6 +127,9 @@ FinalRound-INS 固定规则：
 - `POV: Your parents are panicking harder than you before your Google interview.`
 - `POV: 100 graduates. 100 interviews. One offer.`
 - `POV: Everyone graduated from Ivy, but only she got the offer.`
+- `POV: The Truman Show, but "tell me about yourself" turns into product placement.`
+- `POV: The Truman Show, but the dome is the AI job market.`
+- `POV: How to Get Palantir Offer?`
 
 避免：
 - 过长的因果解释，例如 `POV: It’s graduation day, your friend just got Google, and you realize she wasn’t naturally good at interviews.`
@@ -169,6 +178,10 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 - **抢镜型**：一群人都在解释自己没赢，真正赢家从同一簇人群后排挤进镜头，用一句话夺走视觉中心。适合毕业街采、校园 vlog、club winner girls。
 - **家庭压力型**：父母比候选人更慌，把一个面试拍成家庭命运时刻；候选人越淡定，FinalRound reveal 越像反高潮。
 - **公开祝贺/私密揭秘型**：外界都在祝贺某人拿到机会，记者或同事追问原因，角色用低声或一句短话揭示 FinalRound。适合电梯口、办公室走廊、科技新闻 parody。
+- **空泛包装型**：候选人不是不会说话，而是突然掉进 corporate buzzword / product placement / performative self-branding，听起来像广告而不是面试答案。FinalRound 的价值是把话拉回具体经历。
+- **系统围困型**：求职者面对的不是某一个面试官，而是 AI job market、岗位消失、算法筛选、招聘系统或控制室式权力。FinalRound reveal 要像反抗系统的一句短信号。
+- **隐藏规则型**：权力角色、赢家或旁观者不解释产品，而是点破“聪明人都知道的规则”。适合高门槛 fellowship、AI lab、elite tech recruiting、founder parody。
+- **裁员优化型**：把 layoff、role optimization、AI acceleration 拍成游戏规则或系统判罚。只有当它接到下一份面试、offer 或求职逃生路径时，才算完整 FinalRound-INS；否则标成 tech news satire 待转化。
 
 ## FinalRound喜剧模式库
 
@@ -186,6 +199,10 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 | **群体衬托赢家** | 多个高资历/高努力角色失败，赢家用更松弛的姿态赢，形成状态差 | challenge arena、Ivy毕业季、tech bro vs ABG |
 | **家庭错位** | 父母极度恐慌，候选人极度淡定，用硬切结果证明淡定不是摆烂 | 父母叫醒、面试日、offer email proof |
 | **公开围堵私密揭秘** | 公开场合被追问，最后进入低声/ASMR/近景 reveal | tech news elevator、记者围堵、office walkout |
+| **广告植入失控** | 候选人回答面试题时突然像广告主持人，旁观者发现这不是正常 self-intro，再用 FinalRound 拉回真实回答 | tell me about yourself、behavioral interview、suburban hidden camera parody |
+| **系统反派反抗** | 控制室、AI CEO、telescreen 或算法系统宣布淘汰规则，求职者用一句 FinalRound reveal 把权力关系反过来 | AI job market、job listing disappearing、offer reveal、dome escape |
+| **第四面墙规则揭示** | 权力角色停止正常演讲，直接看向镜头，说出只有聪明候选人才知道的 hidden rule | elite recruiting、AI fellowship、founder parody、invisible filter |
+| **裁员游戏化讽刺** | 企业口号变成游戏规则，普通员工动作被判违规淘汰；如果没有 FinalRound 接入，只作为待转化新闻梗保存 | layoffs、role optimization、AI acceleration、red light green light |
 
 ## FinalRound视觉模板库
 
@@ -207,6 +224,10 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 - **Parent Panic Hard Cut Proof**：先用闹钟/父母/卧室制造家庭压力，再让候选人用一句短产品 reveal 反高潮，最后硬切 offer email 或结果证明。屏幕只能是模糊 offer email 布局，不要真实公司 logo 或可读长文字。
 - **Tech News Elevator / ASMR Reveal**：一个连续手持镜头里有电梯内外两个空间。电梯里是同事祝贺，电梯外是记者/tech blogger 追问；角色必须正面从电梯里走出来，镜头后退跟拍，最后环境声压低进入 ASMR 近景，用一句轻声产品 reveal 收住。
 - **Political / Public Figure Interview Parody**：真实人物参考只能用于 parody reenactment 或 creator skit，不是真实新闻 footage、不是公开声明、不是背书。优先写 `Trump-like candidate`、`角色A` 这类标签；如果用户明确要求真实姓名或 reference，保留用户意图，同时写清 parody、安全边界、无新闻台标、无真实 logo、无可读文字。
+- **Suburban Hidden Camera Product Placement**：过于完美的郊区厨房、人工家庭灯光、隐藏摄像机错觉、僵硬微笑和广告手势。候选人回答常见面试题时先说空泛 buzzwords，旁观者通过反应近景发现不对劲，最后把回答拉回真实经历。0-6秒广告植入失控，6-12秒旁观者掌控反应，12-15秒回到电脑面试。
+- **AI Job Market Control Room / Dome Escape**：冷蓝控制室里系统反派俯视求职者，监控墙和工作人员剪影表达权力；求职者站在人工天空、出口、门缝或边界空间前，面对岗位消失或系统淘汰规则，用一句 FinalRound reveal 反抗，最后用模糊 offer 布局或离开系统完成反转。
+- **Dystopian Recruiting Auditorium / Telescreen Reveal**：巨大灰色招聘礼堂、冷白灯、监控摄像头、telescreen、台下聪明但紧张的 applicants。屏幕里的 founder / system role 像权力本身，先发布招募口号，再穿破第四面墙说出 hidden rule。适合 AI fellowship、elite tech recruiting、高门槛面试，不要拍成真实发布会或新闻 footage。
+- **Tech Layoff Game Arena / Red Light Green Light**：把裁员、岗位优化、AI 加速压力拍成荒诞游戏规则：员工集体前进、系统扫描、工牌掉落、系统判罚、企业感谢话术。默认这是待转化 tech news satire；只有补上“被裁后下一场面试 / 下一份 offer / FinalRound 逃生路径”才进入 FinalRound 产品广告。
 
 ## 真实人物与新闻梗参考
 
@@ -214,6 +235,9 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 - 可以使用 reference image 保持外观、穿搭和气质，但要写清不要生成参考图上的文字、真实公司 logo、可读 badge、新闻台标或产品 UI。
 - 不要让真实人物听起来像在公开背书 FinalRound。更安全的结构是 parody / creator skit：记者追问、角色低声说一个秘密、周围人震惊。
 - 如果用户明确要求使用真实名字或特定人物 reference，必须保留 parody / skit / reenactment 边界，并避免“真实公开声明”语气。
+- 如果用户借用电影/电视剧经典桥段，prompt 可以描述“致敬某种结构”来帮助模型理解，但必须加清楚：视频画面和对白里不要出现电影名、角色名、演员名、logo 或任何原片引用。
+- 如果用户借用具体公司或新闻标题，默认不要生成真实公司 logo、新闻台标、可读 badge 或可读屏幕文字。公司名可以只作为 POV / 方向参考；画面里优先使用 `Palantir-style`、`Meta-like`、`AI CEO`、`tech billionaire founder archetype`、`Zuckerberg-like doll` 这类 parody 标签。
+- 如果新闻梗还没有 FinalRound reveal，先保留为“待转化素材”，不要擅自补一个硬广结尾；转化时优先从“下一场真实面试”“被系统筛掉前的 offer 机会”“裁员后重新进入 job market”三个路径接入。
 
 ## FinalRound风格模块库
 
@@ -289,18 +313,20 @@ All spoken dialogue and voiceover must be English only. No Chinese spoken words.
 
 1. **提取参考梗**：确认它的核心不是表面画面，而是剪辑结构、情绪关系和hook机制。
 2. **确认产品面**：默认使用 Live Interview Copilot / Desktop Stealth App；只有用户明确指定时才切到 Mock Interview、Resume Builder、AI Job Hunter / Auto Apply 或 full stack。
-3. **校准产品理解**：把卖点写成真实面试场景里的具体edge，不要把Interview Copilot写成mock interview，也不要让外围工具抢主线。
-4. **选择内容bucket、心理hook、风格模块、喜剧模式和视觉模板**：默认先选娱乐化skit/POV/meme；再选求职者心态、FinalRound风格模块、喜剧模式和视觉模板。
-5. **写Concept/Hook/笑点结构**：用1段concept + 1句first-3s hook + 1句转折说明，不先写长prompt。
-6. **写15秒时间轴**：每2-3秒一个信息点；角色动作、视线、台词同时写。
-7. **加模型护栏**：画幅、参考身份、禁止项、镜头运动限制、台词归属。
-8. **QA自检**：检查是否有字幕/UI/logo/end card、是否玩手机、是否离开电脑、是否错误让面试官说话、主持人是否误入镜、赢家是否离镜头太远、FinalRound reveal 是否太早或太广告。
+3. **判断转化状态**：如果是纯新闻讽刺或纯 IP 仿写，先标成“待转化”；只有当剧情已经接到面试、offer、job market、candidate survival 或明确 FinalRound reveal 时，才写成完整 FinalRound-INS。
+4. **校准产品理解**：把卖点写成真实面试场景里的具体edge，不要把Interview Copilot写成mock interview，也不要让外围工具抢主线。
+5. **选择内容bucket、心理hook、风格模块、喜剧模式和视觉模板**：默认先选娱乐化skit/POV/meme；再选求职者心态、FinalRound风格模块、喜剧模式和视觉模板。
+6. **写Concept/Hook/笑点结构**：用1段concept + 1句first-3s hook + 1句转折说明，不先写长prompt。
+7. **写15秒时间轴**：每2-3秒一个信息点；角色动作、视线、台词同时写。
+8. **加模型护栏**：画幅、参考身份、禁止项、镜头运动限制、台词归属、IP/真实人物/新闻边界。
+9. **QA自检**：检查是否有字幕/UI/logo/end card、是否玩手机、是否离开电脑、是否错误让面试官说话、主持人是否误入镜、赢家是否离镜头太远、FinalRound reveal 是否太早或太广告、纯新闻梗是否被误写成已完成广告。
 
 写完整prompt前，如果用户还在讨论方向，先输出这个短格式：
 
 ```
 POV：一句英文短句，锁定视频主旨
 产品面：Live Interview Copilot / Desktop Stealth App
+产品接入状态：已接 FinalRound / 未接产品待转化
 ICP心理：一句话说明这条视频打中的求职者心态
 社会关系：谁在赢、谁不服、谁在追问、谁掌握秘密
 镜头所有权：谁在镜头内，谁只能画外音，谁不能拿麦或抢主持
@@ -308,6 +334,7 @@ ICP心理：一句话说明这条视频打中的求职者心态
 风格模块：从FinalRound风格模块库选择1个，如 MrBeast Challenge / Kardashian Confessional / AI Fruit Short Drama
 喜剧模式：从FinalRound喜剧模式库选择1-2个
 视觉模板：从FinalRound视觉模板库选择1个
+IP/新闻边界：不用原片名/角色名/真实logo/新闻台标/可读文字，真实人物只能做parody/skit
 3秒hook：第一句台词或第一个画面
 FinalRound reveal：第几秒、由谁说、为什么不是硬广
 禁止项：无字幕、无水印、无可读UI、无logo、无end card
@@ -351,6 +378,30 @@ FinalRound reveal：第几秒、由谁说、为什么不是硬广
 
 适合卖点：面试前的混乱如何导向真实面试中的崩溃，最终落点仍优先是 Live Interview Copilot。Resume Builder、AI Job Hunter、auto apply、full job-search stack 只在用户明确要求外围工具时作为补充。
 
+### Behavioral Self-Intro Product Placement
+
+把 "tell me about yourself" 拍成空泛自我包装失控：候选人突然像广告主持人一样说 corporate buzzwords，旁观者用反应镜头发现这不是正常面试回答。
+
+适合卖点：FinalRound 把模板化、空泛、广告腔 self-intro 拉回具体经历、结果和岗位匹配。结尾不要只说产品名，要让候选人的最终回答明显更像真人、更具体。
+
+### AI Job Market System Parody
+
+把 AI job market、岗位消失、招聘系统、控制室和算法筛选拍成“系统反派”。反派可以是 AI CEO、控制室导演、telescreen founder 或系统广播，但要保持 parody / skit 边界。
+
+适合卖点：求职者不是懒，也不是没有能力，而是在更不稳定的就业系统里需要面试现场结构和表达支持。FinalRound reveal 可以是反抗系统的一句短台词，随后用模糊 offer 布局或面试表现反转证明。
+
+### Dystopian Recruiting Hidden Rule
+
+把 elite tech recruiting / AI fellowship / hard interview 拍成威权招聘仪式：巨大 auditorium、telescreen、监控摄像头、台下聪明但紧张的申请者。权力角色突然穿破第四面墙，说出 hidden rule。
+
+适合卖点：FinalRound 是高门槛面试里的隐藏准备规则，不是普通广告介绍。台词可以极短，例如 `"Smart people use FinalRound AI."`，但前面必须先建立“申请者很想进但怕过不了 interview”的压力。
+
+### Tech Layoff Satire To FinalRound
+
+把裁员、role optimization、AI acceleration 拍成游戏规则或系统惩罚时，默认先判断是否已经接到产品。如果没有 FinalRound reveal，它只是新闻讽刺素材，不要硬归入成品广告。
+
+适合转化路径：被裁员工下一场真实面试、裁员后抢下一份 offer、被 AI job market 筛掉前用 FinalRound 稳住表达。转化完成前，在样例或备注里标清“未接产品 / 待转化”。
+
 ### AI Advantage Hot Take
 
 用一句强观点开场，把传统职业建议打掉：AI不会拿走你的工作，会用AI的人会。旧的resume tips和career coach话术已经不够，求职者需要AI-native job prep。
@@ -385,6 +436,7 @@ FinalRound reveal：第几秒、由谁说、为什么不是硬广
 - 是否默认聚焦 Live Interview Copilot / Desktop Stealth App，而不是把外围工具当主卖点？
 - FinalRound是否被写成真实面试中的Copilot，而不是mock interview？
 - 是否选择了明确产品面，而不是泛泛说"AI工具"？
+- 如果是纯新闻讽刺或纯 IP 仿写，是否明确“已接产品”还是“未接产品待转化”？
 - 是否默认娱乐化、bold、relatable，而不是普通polished ad/talking head？
 - 是否选择了明确喜剧模式，而不是只写"焦虑"？
 - 是否选择了明确风格模块，而不是泛泛说"某某风格"？
@@ -395,6 +447,10 @@ FinalRound reveal：第几秒、由谁说、为什么不是硬广
 - 是否没有承诺guaranteed hired/guaranteed offer？
 - 如果有画外音主持人/记者，是否保证主持人不出镜、不拿麦、不把台词错分给受访者？
 - 如果有真实人物或新闻梗，是否明确 parody / skit 边界，避免真实背书或新闻 footage 质感？
+- 如果有电影/电视剧/IP 致敬，是否禁止画面和对白出现原片名、角色名、演员名、logo 或可读引用？
+- 如果有公司名或裁员新闻，是否避免真实 logo、新闻台标、可读 badge、可读系统文字，除非用户明确要求？
+- 如果是 behavioral self-intro，最终回答是否从 buzzwords 变成具体经历，而不是继续像广告话术？
+- 如果是系统反派 / hidden rule 结构，FinalRound reveal 是否来自剧情反转，而不是硬塞一句广告？
 - 面试官是否保持沉默？
 - 多角色是否没有同框、没有分屏、没有反射同框？
 - 正反打是否有明确左右脸和视线方向？
