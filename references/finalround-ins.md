@@ -23,7 +23,9 @@ FinalRound产品场景 × 求职者心理痛点 × 社媒梗结构 × Creator表
 
 默认工作原则：
 - 先提炼梗的核心结构，而不是只模仿表面画面。
-- 先用一句英文 POV 锁定主旨。POV 是整条视频的主旨锚点，描述观众正在看到的荒诞处境、谁在赢、谁在慌、为什么值得继续看；不要把产品解释塞进 POV。
+- 先用一句英文 POV 锁定主旨。POV 是整条视频的主旨锚点，描述观众正在看到的新闻事件、荒诞处境、谁在赢、谁在慌；不要把产品解释塞进 POV。
+- 如果用户只给新闻内容、新闻标题或社媒事件，先严格按照新闻本身生成 POV，不要先改写成另一个故事。POV 要保留新闻的核心对象和动作，例如公司裁员、插件发布、岗位消失、某人加入某公司、某类候选人被筛选。
+- POV 必须短，默认只输出一条，两行以内讲完。不要写长因果句、背景解释或完整剧情梗概；如果一行太挤，用两个短句完成，不要超过两行。
 - 先写清人物之间的社会关系和权力差，而不是先写场景。FinalRound 短剧的冲突通常来自谁赢了、谁不服、谁在装、谁知道秘密。
 - 前3秒必须有hook。
 - 笑点/冲突要先对齐，再写完整prompt；如果用户还在讨论方向，先输出"笑点结构"而不是直接写长prompt。
@@ -110,6 +112,7 @@ FinalRound-INS 固定规则：
 - 前3秒必须出现强hook：一张脸、一个冲突、一句能让人停留的话。
 - prompt主体可用中文压缩语义，但所有角色对白、旁白、口播、画外音必须只用英文；FinalRound 相关视频不得出现中文对白或中文口播。
 - 每个生成视频prompt末尾必须显式写入：`All spoken dialogue and voiceover must be English only. No Chinese spoken words. No Chinese text.`
+- 每个完整生成视频 prompt 的最后必须加台词抽取块，固定格式是 `The only spoken lines are:`，下面逐行列出所有英文对白。即使时间轴里已经写过台词，也要在末尾重复列一次，方便复制粘贴和防止模型加词。
 - 默认不要背景音乐；如用户要求声音，允许写角色台词、环境声、短剧式 SFX / reaction sound，例如 whoosh、record scratch、dramatic sting、notification pop，但不要连续铺底音乐。
 - 如果参考源来自电影、电视剧或强 IP 场景，默认不要让生成模型自配乐，留给后期使用更准确的原片氛围音乐；如果参考源只是 Twitter / Instagram 梗、UGC短剧或社媒段子，可以生成轻量音效，但仍不要生成大段背景音乐。
 - 不要字幕、水印、meme overlay、title card、end card。
@@ -119,6 +122,12 @@ FinalRound-INS 固定规则：
 ### POV Hook 规则
 
 用户只要问"写一个POV"或需要视频第一屏文案，默认输出**一句英文短hook**，不要写解释型长句。POV应该描述观众瞬间处境，而不是总结产品卖点。
+
+如果用户输入的是新闻内容，POV 生成顺序固定为：先抓新闻事实里的主语、动作、冲突，再压成一句英文 POV。不要为了套 FinalRound 先改新闻，不要离开新闻事实发明更大的背景。
+
+长度规则：POV 默认一行，最多两行；优先 8-14 个英文词，复杂新闻最多用两个短句。不要写成 `It’s graduation day, because..., and then...` 这类长句。
+
+输出规则：当用户只要 POV 时，只输出 POV 本身，不附带解释、卖点、prompt 或备选列表，除非用户明确要求多个版本。
 
 好例子：
 - `POV: Your classmate got the offer, and you have no idea how.`
@@ -134,6 +143,7 @@ FinalRound-INS 固定规则：
 避免：
 - 过长的因果解释，例如 `POV: It’s graduation day, your friend just got Google, and you realize she wasn’t naturally good at interviews.`
 - 把FinalRound直接塞进POV，除非用户明确要强产品露出。
+- POV 离开用户新闻事实，变成泛泛求职焦虑或泛 AI 叙事。
 
 ## 内容方向
 
@@ -275,7 +285,8 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 - 如果用户指定白女 / white women / white girls，默认使用 Valley girl accent；如果用户显式指定 Valley girl accent，也按同一规则执行。必须写清所有对白仍然是英文：`strong Valley girl accent, stretched vowels, slight upward intonation, LA mean girls / reality show girls tone`。不要写中文对白，不要中文口音。
 - 如果用户指定父母 heavy Chinglish accent，只给父母这个口音；孩子/候选人是否有口音按用户设定，不要自动把同一种口音分配给所有亚裔角色。
 - 画外音主持人、记者、面试官、受访者的台词归属必须写死。主持人全程画外音时，画面里的学生不能拿麦、不能说主持人的问题、不能出现主持人反应镜头。
-- 如果用户给出精确台词，台词不要动。必要时在 prompt 末尾加 `The only spoken lines are: ...` 来防止模型加词。
+- 如果用户给出精确台词，台词不要动。完整 prompt 末尾必须加 `The only spoken lines are:`，逐行列出所有英文台词，防止模型加词。
+- `The only spoken lines are:` 必须是 prompt 的最后一个台词区块，放在所有画面、声音、禁止项之后；不要在这个区块里放中文翻译、动作说明、旁白解释或 speaker 之外的描述。
 - 沉默可以比大喊更有效。面试官沉默、候选人冻结、手停在键盘上，常常比解释更像真实面试。
 - 不解释笑点，不做道德总结，不在最后一句升华；用硬切、表情或一句短产品动作收住。
 - 每段动作要有递进：自信→迟疑→空白→求助→重新聚焦；不要把多个焦虑画面随机堆在一起。
@@ -319,7 +330,8 @@ All spoken dialogue and voiceover must be English only. No Chinese spoken words.
 6. **写Concept/Hook/笑点结构**：用1段concept + 1句first-3s hook + 1句转折说明，不先写长prompt。
 7. **写15秒时间轴**：每2-3秒一个信息点；角色动作、视线、台词同时写。
 8. **加模型护栏**：画幅、参考身份、禁止项、镜头运动限制、台词归属、IP/真实人物/新闻边界。
-9. **QA自检**：检查是否有字幕/UI/logo/end card、是否玩手机、是否离开电脑、是否错误让面试官说话、主持人是否误入镜、赢家是否离镜头太远、FinalRound reveal 是否太早或太广告、纯新闻梗是否被误写成已完成广告。
+9. **加台词抽取块**：完整 prompt 末尾必须写 `The only spoken lines are:`，并逐行列出全部英文对白。
+10. **QA自检**：检查 POV 是否基于用户新闻且两行以内，是否有字幕/UI/logo/end card、是否玩手机、是否离开电脑、是否错误让面试官说话、主持人是否误入镜、赢家是否离镜头太远、FinalRound reveal 是否太早或太广告、纯新闻梗是否被误写成已完成广告、末尾是否有台词抽取块。
 
 写完整prompt前，如果用户还在讨论方向，先输出这个短格式：
 
@@ -338,6 +350,7 @@ IP/新闻边界：不用原片名/角色名/真实logo/新闻台标/可读文字
 3秒hook：第一句台词或第一个画面
 FinalRound reveal：第几秒、由谁说、为什么不是硬广
 禁止项：无字幕、无水印、无可读UI、无logo、无end card
+台词抽取：The only spoken lines are: 后逐行列出全部英文对白
 ```
 
 ## 常用模板
@@ -432,6 +445,8 @@ FinalRound reveal：第几秒、由谁说、为什么不是硬广
 - 是否是9:16竖屏15秒？
 - 前3秒是否有脸和冲突？
 - 是否先锁定一句英文 POV？
+- 如果用户给的是新闻内容，POV 是否严格基于新闻事实，而不是另起一个泛求职故事？
+- POV 是否默认一行、最多两行，没有长因果解释？
 - 是否写清社会关系、镜头所有权、空间站位和 reveal 机制？
 - 是否默认聚焦 Live Interview Copilot / Desktop Stealth App，而不是把外围工具当主卖点？
 - FinalRound是否被写成真实面试中的Copilot，而不是mock interview？
@@ -455,3 +470,4 @@ FinalRound reveal：第几秒、由谁说、为什么不是硬广
 - 多角色是否没有同框、没有分屏、没有反射同框？
 - 正反打是否有明确左右脸和视线方向？
 - 每句台词是否短到15秒内能说完？
+- 完整 prompt 末尾是否有 `The only spoken lines are:`，并且只列英文台词？
