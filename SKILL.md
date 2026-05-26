@@ -38,14 +38,15 @@ Do not defer FinalRound prompt structure to another video skill. External style 
 ## Default Execution
 
 1. Read `references/finalround-ins.md`.
-2. Classify the request using its workflow: product face, ICP psychology, social/status dynamic, camera ownership, spatial blocking, reveal mechanism, style module, comedy mode, visual template, hook, turn, restrictions.
+2. Classify the request using its workflow: product face, ICP psychology, social/status dynamic, camera ownership, spatial blocking, reveal mechanism, close-up density, audio/BGM handling, style module, comedy mode, visual template, hook, turn, restrictions.
 3. For INS / Instagram / TikTok work, establish a one-line English POV before writing or optimizing the full prompt, unless the user already gives a locked POV. Treat the POV as the video's north star: it should state the viewer-facing situation, not the product explanation.
 4. If the user asks to optimize the skill from approved prompts, patch durable rules in `references/finalround-ins.md`; do not only add examples. Base the rules on finished prompts, and skip any prompt Cathy calls unfinished.
-5. If the style module is Kardashian Confessional or AI Fruit Short Drama, read the matching `ips/` library and its style index before proposing concepts. Extract style elements first; do not force the library into a FinalRound-specific template.
-6. If writing a prompt, also read `references/finalround-ins-samples.md` and match its level of specificity.
-7. If the prompt uses a stored character or real-person-style reference, resolve the R2 asset first. Use `references/r2-character-assets.md` to find the `chars/` asset slug, re-check the exact image key with `rclone lsf`, presign it through the creative API storage layer, and pass the URL as `image_url`, `image_urls`, or `reference_images` according to the provider. In the generation prompt, refer to it only as `Reference [1]`, `Reference [2]`, etc.
-8. Output in the format requested by the user. If the user is still discussing direction, use the short direction format from `finalround-ins.md`; if the user asks for a prompt, write the full 15-second 9:16 prompt.
-9. Run the QA rules in `finalround-ins.md` before finalizing.
+5. If the user is iterating from generated videos, preserve the variables they liked, use reference videos when supported, and vary only one main variable per new version.
+6. If the style module is Kardashian Confessional or AI Fruit Short Drama, read the matching `ips/` library and its style index before proposing concepts. Extract style elements first; do not force the library into a FinalRound-specific template.
+7. If writing a prompt, also read `references/finalround-ins-samples.md` and match its level of specificity.
+8. If the prompt uses a stored character or real-person-style reference, resolve the R2 asset first. Use `references/r2-character-assets.md` to find the `chars/` asset slug, re-check the exact image key with `rclone lsf`, presign it through the creative API storage layer, and pass the URL as `image_url`, `image_urls`, or `reference_images` according to the provider. In the generation prompt, refer to it only as `Reference [1]`, `Reference [2]`, etc.
+9. Output in the format requested by the user. If the user is still discussing direction, use the short direction format from `finalround-ins.md`; if the user asks for a prompt, write the full 15-second 9:16 prompt.
+10. Run the QA rules in `finalround-ins.md` before finalizing.
 
 ## Hard Rules
 
