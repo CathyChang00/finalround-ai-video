@@ -40,6 +40,7 @@ FinalRound产品场景 × 求职者心理痛点 × 社媒梗结构 × Creator表
 - 如果灵感来自电影、电视剧或强 IP，只提炼结构关系和镜头语法，例如“控制室俯视主角”“隐藏摄像机广告植入”“人工天空出口前反抗”，不要把原片名、角色名、演员名、logo 或可读引用写进画面或对白。
 - 如果灵感来自 tech news 或裁员新闻，先判断它是否已经接到 FinalRound 产品场景。已经接到 offer / interview / job market / candidate survival 的，可以沉淀为 FinalRound-INS；如果只是纯新闻讽刺，标成“待转化”，不要硬说它已经是 FinalRound 广告。
 - 可以把 AI job market、招聘系统、裁员系统写成拟人化控制者，例如控制室导演、telescreen founder、游戏木头人、系统广播，但最终冲突必须落在求职者如何过面试、拿 offer、保住下一次机会。
+- 如果用户点名电影、电视剧、游戏、历史仪式或经典场面，必须读取 `references/ip-adaptation.md`，先把 IP 转成 safe template label，再写 FinalRound prompt。
 
 
 ### 首版质量底线
@@ -306,6 +307,12 @@ FinalRound-INS 是 entertainment-first creator content for high-intent job seeke
 
 风格模块决定整条视频的外壳和节奏。先选风格模块，再选喜剧模式和视觉模板。不要只写"某某风格"，必须先读取对应风格库，提取可迁移要素，再按当前任务应用。
 
+### IP / Genre Adaptation
+
+纯转译库：`references/ip-adaptation.md`。当用户指定 Matrix、1984、Squid Game、Oppenheimer、Godfather、Napoleon coronation、Blade Runner、LOTR、MrBeast、电影/剧集/游戏/历史仪式感时，必须先读取这个库。
+
+使用方式：先把源 IP 抽象成 safe template label，例如 `AI Job Market Control Room`、`Dystopian Recruiting Auditorium`、`Interview Elimination Game`、`High-Stakes Interview War Room`、`Winner Secret Reveal`，再接到 interview / offer / job market / candidate survival。生成 prompt 不写原片名、角色名、演员名、logo、可读引用或原台词。
+
 ### MrBeast Challenge
 
 不要做普通 MrBeast 模仿。这里只保留可迁移的挑战赛语法：自愿参与、极端条件、简单规则、明确奖励、倒计时、淘汰或反转。
@@ -412,13 +419,14 @@ All spoken dialogue and voiceover must be English only. No Chinese spoken words.
 2. **确认产品面**：默认使用 Live Interview Copilot / Desktop Stealth App；只有用户明确指定时才切到 Mock Interview、Resume Builder、AI Job Hunter / Auto Apply 或 full stack。
 3. **判断转化状态**：如果是纯新闻讽刺或纯 IP 仿写，先标成“待转化”；只有当剧情已经接到面试、offer、job market、candidate survival 或明确 FinalRound reveal 时，才写成完整 FinalRound-INS。
 4. **解析 R2 资产**：如果涉及 R2 角色或真实人物 reference，先用 `references/r2-character-assets.md` 和 `rclone lsf` 确认 asset slug / 具体图片路径；生成时通过 presigned URL 传入 reference image，prompt 里只写 `Reference [n]`。
-5. **校准产品理解**：把卖点写成真实面试场景里的具体edge，不要把Interview Copilot写成mock interview，也不要让外围工具抢主线。
-6. **选择内容bucket、心理hook、风格模块、喜剧模式和视觉模板**：默认先选娱乐化skit/POV/meme；再选求职者心态、FinalRound风格模块、喜剧模式和视觉模板。
-7. **写Concept/Hook/笑点结构**：用1段concept + 1句first-3s hook + 1句转折说明，不先写长prompt。
-8. **写15秒时间轴**：每2-3秒一个信息点；角色动作、视线、台词同时写。
-9. **加模型护栏**：画幅、参考身份、禁止项、镜头运动限制、台词归属、IP/真实人物/新闻边界。
-10. **加台词抽取块**：完整 prompt 末尾必须写 `The only spoken lines are:`，并逐行列出全部英文对白。
-11. **QA自检**：检查 POV 是否基于用户新闻且两行以内，R2 角色是否已通过真实 reference 传入，prompt 是否避免敏感真人/公司身份词，是否有字幕/UI/logo/end card、是否玩手机、是否离开电脑、是否错误让面试官说话、主持人是否误入镜、赢家是否离镜头太远、FinalRound reveal 是否太早或太广告、纯新闻梗是否被误写成已完成广告、末尾是否有台词抽取块。
+5. **IP转译**：如果用户借用电影、剧集、游戏、历史仪式或经典场面，读取 `references/ip-adaptation.md`，转成 safe template label，确认没有原片名/角色名/演员名/logo/台词进入生成 prompt。
+6. **校准产品理解**：把卖点写成真实面试场景里的具体edge，不要把Interview Copilot写成mock interview，也不要让外围工具抢主线。
+7. **选择内容bucket、心理hook、风格模块、喜剧模式和视觉模板**：默认先选娱乐化skit/POV/meme；再选求职者心态、FinalRound风格模块、喜剧模式和视觉模板。
+8. **写Concept/Hook/笑点结构**：用1段concept + 1句first-3s hook + 1句转折说明，不先写长prompt。
+9. **写15秒时间轴**：每2-3秒一个信息点；角色动作、视线、台词同时写。
+10. **加模型护栏**：画幅、参考身份、禁止项、镜头运动限制、台词归属、IP/真实人物/新闻边界。
+11. **加台词抽取块**：完整 prompt 末尾必须写 `The only spoken lines are:`，并逐行列出全部英文对白。
+12. **QA自检**：检查 POV 是否基于用户新闻且两行以内，R2 角色是否已通过真实 reference 传入，prompt 是否避免敏感真人/公司身份词，是否有字幕/UI/logo/end card、是否玩手机、是否离开电脑、是否错误让面试官说话、主持人是否误入镜、赢家是否离镜头太远、FinalRound reveal 是否太早或太广告、纯新闻梗是否被误写成已完成广告、末尾是否有台词抽取块。
 
 ### 生成迭代模式
 
@@ -444,6 +452,7 @@ ICP心理：一句话说明这条视频打中的求职者心态
 喜剧模式：从FinalRound喜剧模式库选择1-2个
 视觉模板：从FinalRound视觉模板库选择1个
 IP/新闻边界：不用原片名/角色名/真实logo/新闻台标/可读文字，真实人物只能做parody/skit
+IP转译：不需要 / 需要；如需要，写 safe template label 和产品接入方式
 3秒hook：第一句台词或第一个画面
 FinalRound reveal：第几秒、由谁说、为什么不是硬广
 禁止项：无字幕、无水印、无可读UI、无logo、无end card
@@ -582,6 +591,7 @@ FinalRound reveal：第几秒、由谁说、为什么不是硬广
 - 如果有画外音主持人/记者，是否保证主持人不出镜、不拿麦、不把台词错分给受访者？
 - 如果有真实人物或新闻梗，是否明确 parody / skit 边界，避免真实背书或新闻 footage 质感？
 - 如果有电影/电视剧/IP 致敬，是否禁止画面和对白出现原片名、角色名、演员名、logo 或可读引用？
+- 如果用户点名 IP 或经典场面，是否读取 `references/ip-adaptation.md` 并转成 safe template label？
 - 如果有公司名或裁员新闻，是否避免真实 logo、新闻台标、可读 badge、可读系统文字，除非用户明确要求？
 - 如果是 behavioral self-intro，最终回答是否从 buzzwords 变成具体经历，而不是继续像广告话术？
 - 如果是系统反派 / hidden rule 结构，FinalRound reveal 是否来自剧情反转，而不是硬塞一句广告？
