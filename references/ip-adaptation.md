@@ -101,6 +101,68 @@ Matrix-style office scene with Neo escaping the simulation.
 
 关键：FinalRound 是逃出系统的工具，不是对系统的空泛评论。
 
+## 鱿鱼游戏 / Interview Elimination Game
+
+优先用在：面试淘汰、裁员游戏化、AI筛选、job market系统规则、多人竞争一个 offer、候选人在不透明规则里被迫反应。
+
+安全转译标签：`Interview Elimination Game`、`Tech Layoff Game Arena`、`AI Hiring Filter Game`。生成 prompt 里用这些标签，不写原剧名。
+
+不要使用：真实剧集名、角色名、娃娃、面具守卫、红色制服、绿色编号服、形状符号、武器、血、死亡、暴力淘汰、可识别台词或任何原剧 logo。
+
+15秒结构：
+
+1. 0-3s：候选人或员工排成一排，系统广播宣布一个无害但压迫感强的面试规则，例如"Answer in thirty seconds."
+2. 3-6s：第一批人冻结、工牌变暗、笔记本屏幕熄灭、座位灯变红，用无害反馈表现淘汰。
+3. 6-9s：主角被追问 live interview 或 system design question，手部、眼神、屏幕三连特写证明压力。
+4. 9-12s：FinalRound 作为临场 edge 出现，通过候选人耳边一句低声或屏幕外反应表现，不展示产品 UI。
+5. 12-15s：主角答稳，面试官沉默点头，offer/callback 信封亮起，系统广播改口或人群反应。
+
+可用台词：
+
+```
+System voice: "Answer in thirty seconds."
+Candidate: "Open FinalRound AI."
+Winner: "It heard the question before I panicked."
+```
+
+产品接法：Live Interview Copilot、实时 talking points、候选人不 freeze、下一份工作机会。FinalRound 的作用不是"打败系统"，而是让主角在系统规则下稳住表达。
+
+## MrBeast / Creator Challenge Arena
+
+优先用在：百人挑战、毕业季 offer 竞争、街采/校园挑战、黑客松、多人面试挑战、"最后一个不崩的人赢"、所有人自愿参加但规则荒诞的选拔。
+
+安全转译标签：`Creator Challenge Arena`、`One Offer Challenge`、`Last Candidate Standing`。生成 prompt 里不要写真实创作者姓名、频道名、logo、口头禅或可识别包装。
+
+不要使用：MrBeast/Jimmy Donaldson 名字或脸、真实频道视觉、真实 logo、原版口头禅、夸张现金 giveaway 背书。奖励默认用 offer、callback、dream job、签证窗口、salary jump；只有用户明确要求时才把现金作为视觉道具。
+
+15秒结构：
+
+1. 0-3s：强数字钩子和规则同时出现，例如"One hundred graduates. One interview. One offer."
+2. 3-6s：主持人或画外音宣布唯一规则，例如"Last one to freeze wins."
+3. 6-10s：候选人快速崩溃、离场、被倒计时压住，剪辑要快，反应特写要多。
+4. 10-13s：唯一赢家保持冷静，手、脸、面试官反应、offer信封给证据。
+5. 13-15s：Winner Secret Reveal，赢家一句话解释 edge，例如"I used FinalRound AI."
+
+主持人规则：可以用 off-camera host 或 generic energetic creator host。除非用户给 R2 参考图，不要让模型生成"MrBeast-like"真人；即使用参考图，也只能写 `Use Reference [n] as host identity`，不要在 prompt 里写真实姓名。
+
+产品接法：FinalRound reveal 要放在挑战结果之后，不要开场就讲产品。先让观众相信这个人赢了，再解释为什么赢。
+
+可用台词：
+
+```
+Host voice: "One hundred graduates. One interview. One offer."
+Host voice: "Last one to freeze wins."
+Winner: "I used FinalRound AI."
+```
+
+## 鱿鱼游戏 vs MrBeast 的选择
+
+如果核心是系统压迫、不透明规则、被动淘汰、害怕犯错，选 `Interview Elimination Game`。
+
+如果核心是自愿参赛、奖励诱惑、社媒挑战、人数夸张、主持人推动节奏，选 `Creator Challenge Arena`。
+
+两者不要混用。鱿鱼游戏的张力来自"系统筛掉你"，MrBeast 的张力来自"你明知道规则荒诞还要参加"。
+
 ## 提示词护栏
 
 每个 IP-adapted prompt 末尾加：
